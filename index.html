@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+      <meta name="google-site-verification" content="ybWSnXeezBFxa0r6SdagE4JBwLw5dIqc804aalaEOoo">
+      <meta name="description" content="MirrorFly is a real-time messaging solution for all kinds of Healthcare communications in an organization related to doctor-patient &amp; professionals chat under a secure platform.">
+      <meta name="keywords" content="chat with a doctor, healthcare app for patients, healthcare communication software, hipaa compliant chat api, live chat for healthcare, video chat with a doctor, doctor patient communication software, secure messaging solutions healthcare">
+       <title>Healthcare Messaging Solution | Doctor-patient Communication App for iOS, Android &amp; Web Platforms</title>
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://www.mirrorfly.com/healthcare-messaging-solution.php">
+      <meta property="og:site_name" content="mirrorfly">
+      <!-- <meta property="og:image" content="https://dasa7d6hxd0bp.cloudfront.net/images/healthcare/HIPAA-compatible-chat-solution-OG.png">
+      <meta property="og:image" content="https://dasa7d6hxd0bp.cloudfront.net/images/mirrorFly-logo.png"> -->
+      <meta property="og:title" content="Build a secure, HIPAA compliant Messaging Apps for Healthcare &amp; Medical Syste ">
+      <meta property="og:description" content="MirrorFly’s telehealth messaging solution helps to build a secure HIPAA-compliant chat application for remote doctor-patient consultations, patient monitoring, appointment reminder &amp; many more through a feature-rich healthcare chat api &amp; sdk.">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="https://www.mirrorfly.com/healthcare-messaging-solution.php">
+      <meta name="twitter:creator" content="@contusmirrorfly">
+      <meta name="twitter:site" content="@contusmirrorfly">
+      <meta name="twitter:title" content="Secure &amp; HIPAA Compatible Chat Solution for Healthcare Sectors ">
+      <meta name="twitter:description" content="Deliver better patient-care experiences with HIPAA-compliant video calling &amp; private chat, file sharing &amp; much more with MirrorFly Chat Solution.">
+      <meta name="twitter:image" content="https://dasa7d6hxd0bp.cloudfront.net/images/healthcare/HIPAA-compatible-chat-solution-OG.png">
+      <link href="./h_m/common.css" rel="stylesheet">
+      <link href="./h_m/contus-menu-header_footer.css" rel="stylesheet">
+      <link href="./h_m/healthcare-messaging-solution.css" rel="stylesheet">
+      <!-- <link rel="icon" href="Banuba_SDK.jpg" type="image/x-icon"> -->
+      <link rel="shortcut icon" href="https://www.banuba.com/hubfs/Banuba_November2018/Images/Banuba%20SDK.png">
+      <link rel="canonical" href="https://www.mirrorfly.com/healthcare-messaging-solution.php">
+      <script src="./h_m/jquery.min.js"></script>
+</head>
+   <body class="dark-menu healthcare-messaging-solution-mainpage" itemscope="" itemtype="http://schema.org/LocalBusiness">
+<!-- banner-popup -->
+<div class="banner-popup" id="pop" onclick="enableMute()">
+<div id="outer"></div>
+      <div class="banner-vid">
+               <video id="myvideo" autoplay="true" muted="" controls="" controlslist="nodownload" disablepictureinpicture="">
+                  <source src="https://dz5p2af24k28d.cloudfront.net/success-mirrorfly.mp4" type="video/mp4">
+               </video>               
+      </div>
+         <span class="close" id="close" onclick="enableMute()">
+               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><defs><style>.agx{fill:#fff;}</style></defs><path class="agx" d="M10.649,9.136l7.009-7.009A1.166,1.166,0,1,0,16.009.478L9,7.487,1.991.478A1.166,1.166,0,0,0,.342,2.127L7.351,9.136.342,16.145a1.166,1.166,0,1,0,1.649,1.649L9,10.785l7.009,7.009a1.166,1.166,0,0,0,1.649-1.649Zm0,0" transform="translate(0 -0.136)"></path></svg>
+            </span>
+   </div>
+<!-- banner-popup -->
+
+
+<!-- Header starts -->
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","UA-3473681-104");</script>
+
+<script>
+   // Menu Hover Function
+   if ($(window).width() > 1025) {
+   $(document).ready(function(){
+   $(".dropdown").hover(function(){
+   $(this).addClass("arrowchange");
+   }, function(){
+   $(this).removeClass("arrowchange");
+   });
+   // Onclick Sub menu Close Mega menu & Close Icon 
+   $(".contusmain-menu .dropdown-menu .product-dropdown-menu .product-menu .menu-list li a,.contusmain-menu .dropdown-menu .product-dropdown-menu i.menu-close").click(function(){
+       $(".dropdown").removeClass("arrowchange");
+     });
+   });
+   }
+   function openmenu(e){
+   
+   var tarelment = e.currentTarget;
+   var currentdiv = document.getElementsByClassName("menu-list");
+   if(tarelment.classList.contains('open-submenu')){
+         tarelment.classList.remove('open-submenu');
+   }
+   else{
+      for(var i = 0 ; i <= currentdiv.length ; i++){
+            tarelment.classList.add('open-submenu');
+               if(currentdiv[i].classList.contains('open-submenu')){
+                  tarelment.classList.add('open-submenu');
+                  currentdiv[i].classList.remove('open-submenu');
+               }
+         }
+   }
+   }
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".banner-notification").hide();
+    $(".page-level-menu").addClass("menu-fixed");
+  });
+});
+
+$(document).ready(function(){
+  $("#open").click(function(){
+    $("#pop").show();
+    $(".banner-notification").hide();
+  });
+});
+$(document).ready(function(){
+  $("#close").click(function(){
+    $("#pop").hide();
+  });
+});
+$('#outer').click(function(e) {
+        $("#pop").hide();
+});
+</script>
+<script>
+var vid = document.getElementById("myvideo");
+
+function enableMute() { 
+  vid.muted = true;
+} 
+</script>      <header class="" id="mirrorfly-menu">
+   <div class="container clearfix">
+      <div class="logo">
+         <a href="index.html"><img src="./h_m/img-logo-dark.svg"></a>
+         <!-- <a href="h_m.htm" title="Banuba">  
+         
+
+            <img class="dark-logo" src="./h_m/img-logo-dark.svg" alt="MirrorFly" title="Banuba">      
+            <img class="logo-scroll" src="./h_m/img-logo-white.svg" alt="MirrorFly" title="Banuba">  
+            <img class="logo-responsive" src="https://dasa7d6hxd0bp.cloudfront.net/images/mirrorfly-bycontus.png" alt="Banuba" title="Banuba">  
+
+            </a> -->
+
+         <a href="#" title="">  
+
+
+
+         <svg class="white-logo" viewBox="0 0 331.473 30.407">
+               <defs>
+                  <style>
+                     .white-logo-1, .white-logo-6, .white-logo-7 {
+                     fill: none;
+                     }
+                     .white-logo-1 {
+                     clip-rule: evenodd;
+                     }
+                     .white-logo-2, .white-logo-8 {
+                     fill: #e5e5e5;
+                     }
+                     .white-logo-3 {
+                     fill: #010101;
+                     }
+                     .white-logo-3, .white-logo-5 {
+                     opacity: 0.1;
+                     }
+                     .white-logo-4 {
+                     fill: #fff;
+                     }
+                     .white-logo-6 {
+                     stroke: #e5e5e5;
+                     }
+                     .white-logo-6, .white-logo-7, .white-logo-8 {
+                     stroke-miterlimit: 10;
+                     }
+                     .white-logo-6, .white-logo-8 {
+                     stroke-width: 0.5px;
+                     }
+                     .white-logo-7 {
+                     stroke: #707070;
+                     stroke-width: 3px;
+                     }
+                     .white-logo-8 {
+                     stroke: #d6d6d6;
+                     }
+                     .white-logo-9 {
+                     opacity: 0.2;
+                     }
+                     .white-logo-10 {
+                     clip-path: url(#clip-path-logo);
+                     }
+                     .white-logo-11 {
+                     fill: url(#patterns);
+                     }
+                     .white-logo-12 {
+                     clip-path: url(#clip-path-2-logo);
+                     }
+                  </style>
+                  <clippath id="clip-path-logo">
+                     <path data-name="Path 70" class="white-logo-1" d="M634.316,6.638l-3.265,3.107a8.557,8.557,0,0,0,3.265-3.107Z"></path>
+                  </clippath>
+                  <pattern id="patterns" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1000 1000">
+                     <image width="1000" height="1000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAPoCAYAAABNo9TkAAAACXBIWXMAAAsSAAALEgHS3X78AAAYKElEQVR4Xu3ZMRECQRREwX8UARqwhF4soYHskLAJCy/ojsfAqzlm5hwAAADgry6rAQAAALCfQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQcF0NAIDve77eq8lWj/ttNQEAfsyDDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQMAxM+dqBAAAAOzlQQcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAgQKADAABAgEAHAACAAIEOAAAAAQIdAAAAAgQ6AAAABAh0AAAACBDoAAAAECDQAQAAIECgAwAAQIBABwAAgACBDgAAAAECHQAAAAIEOgAAAAQIdAAAAAgQ6AAAABAg0AEAACBAoAMAAECAQAcAAIAAgQ4AAAABAh0AAAACBDoAAAAECHQAAAAIEOgAAAAQINABAAAg4AOPIQzP0DEfzAAAAABJRU5ErkJggg=="></image>
+                  </pattern>
+                  <clippath id="clip-path-2-logo">
+                     <path data-name="Path 71" class="white-logo-1" d="M634.537,4.2l-5.545,5.276s2.694-1.111,5.545-5.276Z"></path>
+                  </clippath>
+               </defs>
+               <g transform="translate(-343.417 -112)">
+                  <g transform="translate(-11 112)">
+                     <g>
+                        <path class="white-logo-2" d="M654.5,17.659c-2.514-1.367-3.22-.309-3.043.4a7.369,7.369,0,0,0,3.7,3.837c.97.485,3.087.882,3.616.485C659,22.157,657.766,19.423,654.5,17.659Z"></path>
+                        <path data-name="Path 2" class="white-logo-3" d="M658.78,22.378c.221-.221-1.058-2.955-4.277-4.719a3.194,3.194,0,0,0-2.514-.617A12.738,12.738,0,0,0,654.459,20,17.151,17.151,0,0,0,658.78,22.378Z"></path>
+                        <path class="white-logo-2" d="M661.47,18.673a8.6,8.6,0,0,0-2.734-1.5c-3.66-1.235-4.63-.618-4.718-.044-.089.4.176,1.72,3.748,3.881a6.857,6.857,0,0,0,4.983.617C663.455,21.319,662.705,19.511,661.47,18.673Z"></path>
+                        <path class="white-logo-3" d="M662.97,20.658a4.381,4.381,0,0,0-1.455-1.985,8.623,8.623,0,0,0-2.735-1.5c-2.241-.72-3.482-.831-4.145-.618C656.664,18.541,660.147,19.908,662.97,20.658Z"></path>
+                        <path class="white-logo-2" d="M662.11,14.9c1.9.838,5.645,4.5,3.925,5.292-2.557,1.191-7.938-2.469-8.864-3.792C655.407,13.888,659.817,13.932,662.11,14.9Z"></path>
+                        <path class="white-logo-3" d="M666.454,19.2c-.353-1.411-2.867-3.7-4.322-4.321a8.065,8.065,0,0,0-3.925-.574A17.153,17.153,0,0,0,666.454,19.2Z"></path>
+                        <path class="white-logo-2" d="M659.574,11.661c1.235-1.367,4.278-.308,6.4,1.1,1.94,1.235,4.674,4.586,3.307,5.115-1.367.574-4.1-.308-6.042-1.455C661.162,15.189,658.648,12.588,659.574,11.661Z"></path>
+                        <path class="white-logo-3" d="M669.2,16.115a11.672,11.672,0,0,0-3.219-3.351,9.419,9.419,0,0,0-4.939-1.72A19.65,19.65,0,0,0,669.2,16.115Z"></path>
+                        <path class="white-logo-2" d="M669.056,10.162c3.483,1.323,5.159,4.1,4.674,4.366-.529.265-2.822.617-6.747-.617s-4.983-3.22-4.895-3.925S665.528,8.839,669.056,10.162Z"></path>
+                        <path class="white-logo-3" d="M673.554,13.69a9.083,9.083,0,0,0-4.542-3.528c-2.955-1.147-5.778-.97-6.66-.485a37.771,37.771,0,0,0,5.16,2.2A29.133,29.133,0,0,0,673.554,13.69Z"></path>
+                        <path class="white-logo-2" d="M671.613,7.825c3.661.529,6.086,2.778,5.425,3.131a13.145,13.145,0,0,1-7.365.353,9.725,9.725,0,0,1-4.983-2.47C664.116,7.56,667.953,7.3,671.613,7.825Z"></path>
+                        <path class="white-logo-3" d="M676.685,10.118a9.705,9.705,0,0,0-5.116-2.293c-2.557-.353-5.159-.353-6.35.132A24.49,24.49,0,0,0,669.585,9.1C671.878,9.456,674.3,9.942,676.685,10.118Z"></path>
+                        <path data-name="Path 13" class="white-logo-2" d="M675.406,5.179c2.6.044,6.262,1.014,5.16,1.764a13.637,13.637,0,0,1-8.2,1.587c-3.748-.441-5.38-1.411-5.556-2.072S671.437,5.046,675.406,5.179Z"></path>
+                        <path class="white-logo-3" d="M680.83,6.678c.133-.7-3.043-1.5-5.38-1.543a36.639,36.639,0,0,0-4.983.264,12.414,12.414,0,0,0,2.469.838A29.427,29.427,0,0,0,680.83,6.678Z"></path>
+                        <path class="white-logo-2" d="M670.687,3.547c1.059-.75,5.469-.661,9.57-1.191s6.174-1.94,5.512-.882-4.057,3.837-8.158,4.366C673.51,6.325,668.7,4.87,670.687,3.547Z"></path>
+                        <path class="white-logo-3" d="M674.921,5.884c2.028-.441,6.042-2.513,3.837-3.395-3.617.353-7.145.353-8.071,1.014C669.144,4.605,671.746,5.708,674.921,5.884Z"></path>
+                        <path class="white-logo-4" d="M655.429,13.822c2.6,2.47,2.425,4.366,2.161,4.543-.309.176-3.043-.221-4.851-2.338-1.808-2.072-2.249-3.66-1.941-4.233C651.283,11,652.827,11.353,655.429,13.822Z"></path>
+                        <path class="white-logo-3" d="M657.574,18.367c.308-.176.44-2.068-2.162-4.582-1.72-1.676-3-2.381-3.792-2.426a12.115,12.115,0,0,0,1.19,1.456c.574.794,1.1,1.676,1.72,2.469a15.419,15.419,0,0,0,3.044,3.083Z"></path>
+                        <path class="white-logo-4" d="M658.6,11.75c2.249,1.675,4.1,5.512,2.337,5.644-1.808.133-3.836-.793-5.689-2.734a6.784,6.784,0,0,1-1.94-4.013C653.444,9.456,656.355,10.074,658.6,11.75Z"></path>
+                        <path class="white-logo-3" d="M661.63,16.691c.132-1.234-1.367-3.7-3.043-4.939a8.8,8.8,0,0,0-3.792-1.675A14.422,14.422,0,0,0,661.63,16.691Z"></path>
+                        <path class="white-logo-4" d="M660.853,9.986c2.911,2.028,4.542,4.851,3.66,5.248-1.014.44-4.542-.265-6.923-2.867s-1.411-3.572-1.059-3.748C656.928,8.442,658.295,8.222,660.853,9.986Z"></path>
+                        <path class="white-logo-5" d="M664.714,14.473c-.265-1.059-1.72-3-3.881-4.5-1.984-1.411-3.307-1.587-3.925-1.5a4.723,4.723,0,0,1,.441.485c.574.618,1.191,1.191,1.808,1.764A23.663,23.663,0,0,0,664.714,14.473Z"></path>
+                        <path class="white-logo-4" d="M662.882,7.869c-2.646-1.367-4.763-1.323-5.116-.4s1.852,3.484,5.027,4.763,4.5.132,4.5.132C667.821,11.661,665.484,9.28,662.882,7.869Z"></path>
+                        <path class="white-logo-3" d="M667.311,12.34c.4-.75-1.852-3.131-4.454-4.454-2.029-1.015-3.749-1.235-4.587-.882A20.424,20.424,0,0,0,667.311,12.34Z"></path>
+                        <path class="white-logo-4" d="M667.027,6.943c3.087,1.19,5.116,3.263,4.1,3.925-1.279.793-7.32-.662-9.878-2.6-1.852-1.411-1.808-2.514-.794-2.823C661.515,5.091,663.94,5.708,667.027,6.943Z"></path>
+                        <path class="white-logo-3" d="M670.979,9.506a10.069,10.069,0,0,0-3.925-2.558A20.7,20.7,0,0,0,661.5,5.405c.617.4,1.411.75,1.631.882A29.578,29.578,0,0,0,666.26,7.83,35.21,35.21,0,0,0,670.979,9.506Z"></path>
+                        <path class="white-logo-4" d="M668.35,4.517c3,.529,8.732,1.9,5.777,2.734s-10.452-.441-11.554-1.675c-1.1-1.279.794-1.544.794-1.544C664.249,3.9,665.351,4.032,668.35,4.517Z"></path>
+                        <path class="white-logo-3" d="M674.921,6.832c.441-.838-4.057-1.852-6.571-2.293a19.612,19.612,0,0,0-4.807-.53,13.668,13.668,0,0,0,5.16,2.073A26.659,26.659,0,0,0,674.921,6.832Z"></path>
+                        <path class="white-logo-4" d="M673.466,2.665c2.072,0,5.247-.044,4.674.662-.529.749-4.851,2.6-8.82,2.16s-4.233-1.852-4.233-1.852C665.307,2.577,671.437,2.665,673.466,2.665Z"></path>
+                        <path class="white-logo-3" d="M672.054,2.665c-2.646,0-6.747.132-6.923.97,0,0,.088.574,1.235,1.1A12.029,12.029,0,0,0,672.054,2.665Z"></path>
+                        <path class="white-logo-4" d="M663.146,5.046c.706.4,1.544,1.764.441,2.382-1.279.705-4.366-.4-4.366-.4s2.249,2.161.838,2.822c-1.455.662-3.836-.264-3.836-.264.793.573,1.411,1.631.97,2.2-.75.926-3.4.661-3.4.661s.794,1.1.044,1.676c-.705.529-3.263-.926-3.66.309-.75,2.205-2.425,1.411-3.307,1.984a23.679,23.679,0,0,1,6.3-4.084c2.867-1.059-4.229-1.34-2.2-4.78a13.955,13.955,0,0,1,9-6.35c3.7-.573,6.88.529,8.952,1.058,1.235.309,2.205-.22,2.029.221-.529,1.279-3.175,1.014-3.175,1.014C670.07,5.8,664.646,6.017,663.146,5.046Z"></path>
+                     </g>
+                     <g>
+                        <path class="white-logo-2" d="M629.228,17.65c2.514-1.367,3.219-.309,3.043.4a7.365,7.365,0,0,1-3.705,3.837c-.97.485-3.086.882-3.616.485C624.73,22.148,625.965,19.414,629.228,17.65Z"></path>
+                        <path class="white-logo-3" d="M624.95,22.369c-.22-.221,1.059-2.955,4.278-4.719a3.194,3.194,0,0,1,2.514-.617,12.738,12.738,0,0,1-2.47,2.954A17.157,17.157,0,0,1,624.95,22.369Z"></path>
+                        <path class="white-logo-2" d="M622.26,18.664a8.617,8.617,0,0,1,2.734-1.5c3.661-1.235,4.631-.617,4.719-.044.088.4-.176,1.72-3.748,3.881a6.859,6.859,0,0,1-4.984.617C620.276,21.31,621.025,19.5,622.26,18.664Z"></path>
+                        <path class="white-logo-3" d="M620.761,20.649a4.379,4.379,0,0,1,1.455-1.985,8.617,8.617,0,0,1,2.734-1.5c2.242-.72,3.482-.831,4.146-.617C627.067,18.532,623.583,19.9,620.761,20.649Z"></path>
+                        <path class="white-logo-2" d="M621.62,14.893c-1.9.838-5.645,4.5-3.925,5.292,2.558,1.191,7.938-2.469,8.864-3.792C628.323,13.879,623.913,13.923,621.62,14.893Z"></path>
+                        <path class="white-logo-3" d="M617.277,19.194c.353-1.412,2.866-3.7,4.322-4.322a8.063,8.063,0,0,1,3.925-.574A17.162,17.162,0,0,1,617.277,19.194Z"></path>
+                        <path class="white-logo-2" d="M624.157,11.653c-1.235-1.368-4.278-.309-6.395,1.1-1.94,1.235-4.674,4.586-3.307,5.116,1.367.573,4.1-.309,6.041-1.456C622.569,15.18,625.083,12.579,624.157,11.653Z"></path>
+                        <path class="white-logo-3" d="M614.53,16.107a11.648,11.648,0,0,1,3.219-3.352,9.416,9.416,0,0,1,4.939-1.72A19.663,19.663,0,0,1,614.53,16.107Z"></path>
+                        <path class="white-logo-2" d="M614.675,10.153c-3.484,1.323-5.16,4.1-4.674,4.366.529.265,2.822.617,6.747-.617s4.983-3.22,4.9-3.925S618.2,8.83,614.675,10.153Z"></path>
+                        <path class="white-logo-3" d="M610.177,13.681a9.078,9.078,0,0,1,4.542-3.528c2.955-1.146,5.777-.97,6.659-.485a37.758,37.758,0,0,1-5.159,2.2A29.133,29.133,0,0,1,610.177,13.681Z"></path>
+                        <path class="white-logo-2" d="M612.117,7.816c-3.66.529-6.085,2.778-5.424,3.131a13.145,13.145,0,0,0,7.365.353,9.725,9.725,0,0,0,4.983-2.47C619.614,7.551,615.778,7.287,612.117,7.816Z"></path>
+                        <path class="white-logo-3" d="M607.046,10.109a9.705,9.705,0,0,1,5.115-2.293c2.558-.353,5.16-.353,6.351.132A24.512,24.512,0,0,1,614.146,9.1C611.853,9.448,609.427,9.933,607.046,10.109Z"></path>
+                        <path class="white-logo-2" d="M608.325,5.17c-2.6.044-6.262,1.014-5.16,1.764a13.63,13.63,0,0,0,8.2,1.587c3.748-.441,5.38-1.411,5.556-2.072S612.294,5.038,608.325,5.17Z"></path>
+                        <path class="white-logo-3" d="M602.9,6.669c-.133-.7,3.042-1.5,5.38-1.543a36.655,36.655,0,0,1,4.983.264,12.445,12.445,0,0,1-2.47.838A29.335,29.335,0,0,1,602.9,6.669Z"></path>
+                        <path class="white-logo-2" d="M613.043,3.538c-1.058-.75-5.468-.661-9.569-1.191s-6.174-1.94-5.513-.881,4.058,3.836,8.159,4.365C610.221,6.316,615.028,4.861,613.043,3.538Z"></path>
+                        <path class="white-logo-3" d="M608.81,5.875c-2.029-.441-6.042-2.513-3.837-3.395,3.616.353,7.144.353,8.07,1.014C614.587,4.6,611.985,5.7,608.81,5.875Z"></path>
+                        <path class="white-logo-4" d="M628.3,13.813c-2.6,2.47-2.426,4.366-2.161,4.543.309.176,3.043-.221,4.851-2.338,1.808-2.072,2.249-3.66,1.94-4.233C632.447,10.991,630.9,11.344,628.3,13.813Z"></path>
+                        <path class="white-logo-3" d="M626.157,18.358c-.309-.176-.44-2.068,2.162-4.582,1.719-1.676,3-2.381,3.792-2.425a12.2,12.2,0,0,1-1.191,1.455c-.573.794-1.1,1.676-1.719,2.469a15.418,15.418,0,0,1-3.044,3.083Z"></path>
+                        <path class="white-logo-4" d="M625.127,11.741c-2.249,1.675-4.1,5.512-2.338,5.644,1.809.133,3.837-.793,5.689-2.734a6.79,6.79,0,0,0,1.941-4.013C630.286,9.448,627.376,10.065,625.127,11.741Z"></path>
+                        <path class="white-logo-3" d="M622.1,16.683c-.133-1.235,1.367-3.705,3.042-4.94a8.809,8.809,0,0,1,3.793-1.675A14.428,14.428,0,0,1,622.1,16.683Z"></path>
+                        <path class="white-logo-4" d="M622.878,9.977c-2.911,2.028-4.543,4.851-3.661,5.248,1.015.441,4.543-.265,6.924-2.867s1.411-3.572,1.058-3.748C626.8,8.433,625.435,8.213,622.878,9.977Z"></path>
+                        <path class="white-logo-5" d="M619.017,14.464c.264-1.059,1.72-3,3.881-4.5,1.984-1.411,3.307-1.587,3.924-1.5a4.958,4.958,0,0,0-.441.485c-.573.618-1.19,1.191-1.808,1.764A23.627,23.627,0,0,1,619.017,14.464Z"></path>
+                        <path class="white-logo-4" d="M620.849,7.86c2.646-1.367,4.763-1.323,5.116-.4s-1.853,3.484-5.028,4.763-4.5.132-4.5.132C615.91,11.653,618.247,9.271,620.849,7.86Z"></path>
+                        <path class="white-logo-3" d="M616.42,12.331c-.4-.75,1.852-3.131,4.454-4.454,2.029-1.014,3.748-1.235,4.586-.882A20.427,20.427,0,0,1,616.42,12.331Z"></path>
+                        <path class="white-logo-4" d="M616.7,6.934c-3.087,1.191-5.116,3.263-4.1,3.925,1.279.794,7.321-.662,9.879-2.6,1.852-1.411,1.808-2.514.794-2.823C622.216,5.082,619.791,5.7,616.7,6.934Z"></path>
+                        <path class="white-logo-3" d="M612.752,9.5a10.061,10.061,0,0,1,3.925-2.558A20.688,20.688,0,0,1,622.233,5.4c-.617.4-1.411.75-1.632.882a29.4,29.4,0,0,1-3.131,1.543A35.2,35.2,0,0,1,612.752,9.5Z"></path>
+                        <path class="white-logo-4" d="M615.381,4.508c-3,.53-8.732,1.9-5.777,2.735s10.451-.441,11.554-1.676c1.1-1.279-.794-1.544-.794-1.544C619.482,3.891,618.379,4.023,615.381,4.508Z"></path>
+                        <path class="white-logo-3" d="M608.81,6.823c-.441-.838,4.057-1.852,6.571-2.293A19.666,19.666,0,0,1,620.188,4a13.668,13.668,0,0,1-5.16,2.073A26.665,26.665,0,0,1,608.81,6.823Z"></path>
+                        <path class="white-logo-4" d="M610.265,2.656c-2.073,0-5.248-.044-4.674.662.529.749,4.851,2.6,8.82,2.161s4.233-1.853,4.233-1.853C618.424,2.568,612.294,2.656,610.265,2.656Z"></path>
+                        <path class="white-logo-3" d="M611.676,2.656c2.646,0,6.748.132,6.924.97,0,0-.088.574-1.235,1.1A12.036,12.036,0,0,1,611.676,2.656Z"></path>
+                        <path class="white-logo-4" d="M620.584,5.038c-.7.4-1.543,1.764-.441,2.381,1.279.706,4.366-.4,4.366-.4s-2.249,2.161-.838,2.822c1.456.662,3.837-.264,3.837-.264-.794.573-1.411,1.632-.97,2.2.75.926,3.4.661,3.4.661s-.794,1.1-.045,1.676c.706.529,3.264-.926,3.661.309.749,2.2,1.953,1.687,2.835,2.26s-1.912-2.8-4.779-3.86,3.179-1.84,1.15-5.28a13.955,13.955,0,0,0-9-6.35c-3.705-.573-6.88.529-8.953,1.058-1.234.309-2.205-.22-2.028.221.529,1.279,3.175,1.014,3.175,1.014C613.661,5.787,619.085,6.008,620.584,5.038Z"></path>
+                     </g>
+                     <path class="white-logo-6" d="M656.049,14.282v4.081a6.353,6.353,0,0,1-6.322,6.516h-.053l-5.063.111-1.153,2.1L642.107,29.5,640.4,27.095l-1.5-2.054-.051-.051-4.946-.111a5.476,5.476,0,0,1-1.3-.149h-.053c-.149-.053-.249-.053-.4-.1a2.492,2.492,0,0,1-.551-.2c-.15-.049-.35-.151-.5-.2a6.327,6.327,0,0,1-3.306-3.509,6.065,6.065,0,0,1-.452-2.1v-3.1"></path>
+                     <path class="white-logo-7" d="M627.786,14.95"></path>
+                     <path class="white-logo-7" d="M629.163,14.95"></path>
+                     <path class="white-logo-7" d="M656.072,14.335"></path>
+                     <g>
+                        <g>
+                           <g>
+                              <path class="white-logo-6" d="M627.307,15.544V9.381a6.359,6.359,0,0,1,6.345-6.372h16a4.642,4.642,0,0,1,.833.049h.148a3.911,3.911,0,0,1,1.078.295c.049,0,.147.049.2.049a4.4,4.4,0,0,1,1.176.589.048.048,0,0,1,.049.047v0a6.328,6.328,0,0,1,2.989,5.341V14.4"></path>
+                           </g>
+                        </g>
+                     </g>
+                     <g>
+                        <ellipse class="white-logo-2" cx="0.472" cy="0.731" rx="0.472" ry="0.731" transform="translate(626.854 13.59)"></ellipse>
+                        <ellipse class="white-logo-8" cx="0.429" cy="0.697" rx="0.429" ry="0.697" transform="translate(626.898 13.623)"></ellipse>
+                     </g>
+                     <g>
+                        <g>
+                           <g>
+                              <path class="white-logo-4" d="M652.708,4.565h0a.047.047,0,0,0-.047-.046,4.281,4.281,0,0,0-1.133-.567c-.046,0-.141-.047-.188-.047a3.745,3.745,0,0,0-1.038-.283h-.142a4.225,4.225,0,0,0-.8-.047h-15.4a6.12,6.12,0,0,0-6.109,6.132V18.2a5.991,5.991,0,0,0,.425,2.218,6.36,6.36,0,0,0,2.123,2.736,6.787,6.787,0,0,0,.991.567c.141.047.329.141.471.189a2.283,2.283,0,0,0,.519.187c.142.047.236.047.378.094h.047a5.11,5.11,0,0,0,1.226.142h5.206l.115.158,1.119,1.528,1.6,2.264,1.275-2.264.858-1.528.088-.158h5.166a6.13,6.13,0,0,0,6.129-6.133V9.706A6.092,6.092,0,0,0,652.708,4.565Zm-10.992,7.877a1.51,1.51,0,1,1-1.51,1.51A1.51,1.51,0,0,1,641.716,12.442Zm-5.331,2.972a1.509,1.509,0,1,1,1.509-1.509A1.51,1.51,0,0,1,636.385,15.414Zm10.661.094A1.51,1.51,0,1,1,648.556,14,1.508,1.508,0,0,1,647.046,15.508Z"></path>
+                           </g>
+                        </g>
+                     </g>
+                     <g>
+                        <ellipse class="white-logo-4" cx="0.45" cy="0.731" rx="0.45" ry="0.731" transform="translate(655.674 13.572)"></ellipse>
+                        <ellipse class="white-logo-8" cx="0.429" cy="0.697" rx="0.429" ry="0.697" transform="translate(655.682 13.638)"></ellipse>
+                     </g>
+                     <g class="white-logo-9">
+                        <g class="white-logo-10">
+                           <rect data-name="Rectangle 1" class="white-logo-11" width="136.097" height="99.708" transform="translate(602.962 -48.908) rotate(33.244)"></rect>
+                        </g>
+                     </g>
+                     <g class="white-logo-9">
+                        <g class="white-logo-12">
+                           <rect data-name="Rectangle 2" class="white-logo-11" width="231.136" height="169.336" transform="translate(581.289 -114.053) rotate(33.244)"></rect>
+                        </g>
+                     </g>
+                  </g>
+                  <g transform="translate(-11 112)">
+                     <path class="white-logo-4" d="M380.818,30.362V8.467L372.26,30.362h-2.822L360.88,8.467V30.362h-6.463V0h9.058l7.374,18.982L378.223,0h9.1V30.362Z"></path>
+                     <path class="white-logo-4" d="M393.337,30.362V0H399.8V30.362Z"></path>
+                     <path class="white-logo-4" d="M422.97,30.362l-5.963-10.789h-4.734V30.362H405.81V0h14.2c6.327,0,10.242,4.142,10.242,9.787a8.783,8.783,0,0,1-6.692,9.013l6.874,11.562Zm.638-20.621c0-2.5-1.958-4.051-4.507-4.051h-6.828v8.193H419.1C421.65,13.883,423.608,12.336,423.608,9.741Z"></path>
+                     <path class="white-logo-4" d="M452.24,30.362l-5.963-10.789h-4.734V30.362H435.08V0h14.2c6.327,0,10.242,4.142,10.242,9.787a8.783,8.783,0,0,1-6.692,9.013l6.874,11.562Zm.638-20.621c0-2.5-1.958-4.051-4.507-4.051h-6.828v8.193h6.828C450.92,13.883,452.878,12.336,452.878,9.741Z"></path>
+                     <path class="white-logo-4" d="M463.4,15.2c0-8.858,6.478-15.2,15.38-15.2,8.857,0,15.335,6.346,15.335,15.2s-6.478,15.2-15.335,15.2C469.877,30.407,463.4,24.061,463.4,15.2Zm24.281,0c0-5.509-3.481-9.651-8.9-9.651-5.465,0-8.946,4.142-8.946,9.651,0,5.464,3.481,9.65,8.946,9.65C484.2,24.854,487.68,20.668,487.68,15.2Z"></path>
+                     <path class="white-logo-4" d="M516.335,30.362l-5.963-10.789h-4.735V30.362h-6.463V0h14.2c6.327,0,10.242,4.142,10.242,9.787a8.783,8.783,0,0,1-6.692,9.013L523.8,30.362Zm.637-20.621c0-2.5-1.958-4.051-4.507-4.051h-6.828v8.193h6.828C515.014,13.883,516.972,12.336,516.972,9.741Z"></path>
+                     <path class="white-logo-4" d="M529.218,30.362V0h19.254V2.367h-16.66V13.61h16.342v2.367H531.812V30.362Z"></path>
+                     <path class="white-logo-4" d="M553.253,30.362V0h2.64V28h14.7v2.367Z"></path>
+                     <path class="white-logo-4" d="M579.336,30.362V17.388L567.273,0h3.141l10.242,14.93L590.9,0h3.141L581.976,17.388V30.362Z"></path>
+                  </g>
+               </g>
+         </svg>
+         <svg class="scroll-logo" viewBox="0 0 239.622 30.362">
+               <defs>
+                  <style>
+                     .scroll-1 {
+                     clip-path: url(#clip-Artboard_1_copy2);
+                     }
+                     .scroll-2 {
+                     fill: #3095d3;
+                     }
+                     .scroll-3 {
+                     fill: #6f4ea1;
+                     }
+                     .scroll-4 {
+                     fill: transparent;
+                     }
+                  </style>
+                  <clippath id="clip-Artboard_1_copy2">
+                     <rect width="239.622" height="30.362"></rect>
+                  </clippath>
+               </defs>
+               <g id="Artboard_1_copy2" data-name="Artboard 1 copy" class="scroll-1">
+                  <rect class="scroll-4" width="239.622" height="30.362"></rect>
+                  <g data-name="Group 42">
+                     <g data-name="Group 21" transform="translate(0 -52.666)">
+                        <path data-name="Path 91" class="scroll-2" d="M26.4,83.027v-21.9l-8.557,21.9H15.022l-8.558-21.9v21.9H0V52.666H9.058l7.374,18.981,7.375-18.981h9.1V83.027Z"></path>
+                        <path data-name="Path 92" class="scroll-2" d="M38.921,83.027V52.666h6.464V83.027Z"></path>
+                        <path data-name="Path 93" class="scroll-2" d="M68.554,83.027,62.591,72.239H57.857V83.027H51.393V52.666H65.6c6.328,0,10.242,4.142,10.242,9.786a8.782,8.782,0,0,1-6.691,9.013l6.873,11.562Zm.637-20.62c0-2.5-1.957-4.051-4.506-4.051H57.857v8.193h6.828C67.234,66.549,69.191,65,69.191,62.407Z"></path>
+                        <path data-name="Path 94" class="scroll-2" d="M97.824,83.027,91.861,72.239H87.127V83.027H80.663V52.666h14.2c6.328,0,10.242,4.142,10.242,9.786a8.782,8.782,0,0,1-6.691,9.013l6.873,11.562Zm.637-20.62c0-2.5-1.957-4.051-4.506-4.051H87.127v8.193h6.828C96.5,66.549,98.461,65,98.461,62.407Z"></path>
+                        <path data-name="Path 95" class="scroll-2" d="M108.982,67.869c0-8.858,6.478-15.2,15.38-15.2,8.858,0,15.336,6.345,15.336,15.2s-6.478,15.2-15.336,15.2C115.46,83.073,108.982,76.727,108.982,67.869Zm24.282,0c0-5.508-3.482-9.651-8.9-9.651-5.464,0-8.946,4.143-8.946,9.651,0,5.465,3.482,9.651,8.946,9.651C129.782,77.52,133.264,73.334,133.264,67.869Z"></path>
+                        <path data-name="Path 96" class="scroll-2" d="M161.918,83.027l-5.963-10.788h-4.734V83.027h-6.464V52.666h14.2c6.328,0,10.242,4.142,10.242,9.786a8.782,8.782,0,0,1-6.691,9.013l6.873,11.562Zm.637-20.62c0-2.5-1.957-4.051-4.506-4.051h-6.828v8.193h6.828C160.6,66.549,162.555,65,162.555,62.407Z"></path>
+                        <path data-name="Path 97" class="scroll-3" d="M174.8,83.027V52.666h19.255v2.367H177.4V66.276h16.341v2.367H177.4V83.027Z"></path>
+                        <path data-name="Path 98" class="scroll-3" d="M198.836,83.027V52.666h2.64V80.66h14.7v2.367Z"></path>
+                        <path data-name="Path 99" class="scroll-3" d="M224.919,83.027V70.054L212.857,52.666H216L226.24,67.6l10.241-14.93h3.141L227.56,70.054V83.027Z"></path>
+                     </g>
+                  </g>
+               </g>
+         </svg>
+         <svg class="white-logo-text" version="1.1" x="0px" y="0px" viewBox="0 0 155 20" style="enable-background:new 0 0 155 20;" xml:space="preserve">
+               <style type="text/css">
+                  .scroll-text-logo{fill:#FFFFFF;}
+               </style>
+               <g transform="translate(-343.417 -112)">
+                  <g transform="translate(-11 112)">
+                     <path class="scroll-text-logo" d="M371.7,19.9V5.8l-5.5,14.1h-1.8l-5.5-14.1v14.1h-4.2V0.3h5.8l4.8,12.2L370,0.3h5.9v19.6H371.7z"></path>
+                     <path class="scroll-text-logo" d="M379.7,19.9V0.3h4.2v19.6H379.7z"></path>
+                     <path class="scroll-text-logo" d="M398.8,19.9l-3.8-7h-3v7h-4.2V0.3h9.1c4.1,0,6.6,2.7,6.6,6.3c0.1,2.7-1.7,5.2-4.3,5.8l4.4,7.4
+                        H398.8z M399.2,6.6c0-1.6-1.3-2.6-2.9-2.6h-4.4v5.3h4.4C398,9.3,399.2,8.3,399.2,6.6z"></path>
+                     <path class="scroll-text-logo" d="M417.7,19.9l-3.8-7h-3v7h-4.2V0.3h9.1c4.1,0,6.6,2.7,6.6,6.3c0.1,2.7-1.7,5.2-4.3,5.8l4.4,7.4
+                        H417.7z M418.1,6.6c0-1.6-1.3-2.6-2.9-2.6h-4.4v5.3h4.4C416.8,9.3,418.1,8.3,418.1,6.6z"></path>
+                     <path class="scroll-text-logo" d="M424.9,10.1c0-5.7,4.2-9.8,9.9-9.8c5.7,0,9.9,4.1,9.9,9.8s-4.2,9.8-9.9,9.8
+                        C429.1,19.9,424.9,15.8,424.9,10.1z M440.5,10.1c0-3.5-2.2-6.2-5.7-6.2c-3.5,0-5.8,2.7-5.8,6.2c0,3.5,2.2,6.2,5.8,6.2
+                        C438.3,16.3,440.5,13.6,440.5,10.1L440.5,10.1z"></path>
+                     <path class="scroll-text-logo" d="M459,19.9l-3.8-7h-3.1v7h-4.2V0.3h9.1c4.1,0,6.6,2.7,6.6,6.3c0.1,2.7-1.7,5.2-4.3,5.8l4.4,7.4
+                        H459z M459.4,6.6c0-1.6-1.3-2.6-2.9-2.6h-4.4v5.3h4.4C458.1,9.3,459.4,8.3,459.4,6.6L459.4,6.6z"></path>
+                     <path class="scroll-text-logo" d="M467.3,19.9V0.3h12.4v1.5H469v7.2h10.5v1.5H469v9.3H467.3z"></path>
+                     <path class="scroll-text-logo" d="M482.8,19.9V0.3h1.7v18h9.5v1.5L482.8,19.9z"></path>
+                     <path class="scroll-text-logo" d="M499.6,19.9v-8.4l-7.8-11.2h2l6.6,9.6l6.6-9.6h2l-7.8,11.2v8.4H499.6z"></path>
+                  </g>
+               </g>
+         </svg>
+         </a>
+      </div>
+      <!-- <div class="hamburger" id="ham">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div> -->
+      <nav class="menu">
+         <ul id="menubar">
+            <li class="expert"><a itemprop="url" href="form.html">Contact Sales</a></li>
+         </ul>
+
+      </nav>
+   </div>
+</header>
+      <div class="chat-api-banner">
+         <div class="container banner-heading clearfix">
+            <div class="banner-content banner-left animated">
+               <h1 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; color: #fff;">Powering Secure<span style="color: #fff;">Healthcare Communication App </span>
+               </h1>
+               <h4 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; color: #fff;">for Patients &amp; Medical Professionals </h4>
+               <p class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp; color: #fff;">Connect over 1 million patients, doctors and medical professionals through a single chat solution. 
+</p>
+              <ul class="wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp; color: #fff;">
+                  <li><i></i>1-to-1 chat </li>
+                  <li><i></i>Video/Audio Call</li>
+                  <li><i></i>Conferencing </li>
+                  <li><i></i>HIPAA Compatibility </li>
+                  <li><i></i>Health Report Sharing</li>
+                  <li><i></i>Telemedicine</li>
+               </ul>
+               <a href="form.html" class="button ripple wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">Talk to Sales</a>
+            </div>
+            <div class="banner-img">
+            <!-- <img src="./h_m/HealthCare-video.gif" class="wow fadeInRight" alt="video call api android" style="visibility: visible; animation-name: fadeInRight;"> -->
+            <!-- <img src="./h_m/HealthCare-video1.gif" class="wow fadeInRight" alt="video call api android" style="visibility: visible; animation-name: fadeInRight;"> -->
+            
+            <!-- <video width="800" height="500" src="./h_m/HealthCare-video.mp4" controls autoplay="autoplay" ></video>  -->
+            <!-- <video width="800" height="500" src="https://webref.ru/example/video/duel.mp4" controls autoplay="autoplay" ></video>  -->
+            <!-- <video width="800" height="500" src="./h_m/duel.mp4"  autoplay  loop ></video> -->
+            
+            
+             <!-- <video controls width="800" height="500" autoplay="autoplay" style="visibility: visible; animation-name: fadeInRight;">
+                  <source src="./h_m/HealthCare-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video> -->
+
+            <!-- <video loop  width="800" height="500" autoplay="autoplay" style="visibility: visible; animation-name: fadeInRight;">
+                  <source src="./h_m/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video> -->
+
+             <video preload="auto" autoplay="true" loop="true" muted="muted" class="wow fadeInRight" alt="video call api android" style="visibility: visible; animation-name: fadeInRight;">
+               <source src="./h_m/Comp1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              </video>
+         
+         
+         </div>
+       </div>
+      </div>
+      <div class="innerpagesmenu">
+         <div class="container">
+         <div class="submenu-logo">
+            <span class="stack-head bold">Healthcare</span>
+         </div>
+            <ul>
+               <li><a class="scroll sticky-tab-1" href="javascript:void(0);" onclick="jQuery(&#39;html, body&#39;).animate({scrollTop: jQuery(&#39;#rest-orchestration&#39;).position().top-70}, &#39;slow&#39;);">Doctor-Patient Conversation</a></li>
+               <li><a class="scroll sticky-tab-2" href="javascript:void(0);" onclick="jQuery(&#39;html, body&#39;).animate({scrollTop: jQuery(&#39;#feature-enriched&#39;).position().top-120}, &#39;slow&#39;);">Health Report Sharing</a></li>
+               <li><a class="scroll sticky-tab-3" href="javascript:void(0);" onclick="jQuery(&#39;html, body&#39;).animate({scrollTop: jQuery(&#39;#video-conferencing&#39;).position().top-100}, &#39;slow&#39;);">Broadcasting</a></li>
+               <li><a class="scroll sticky-tab-4" href="javascript:void(0);" onclick="jQuery(&#39;html, body&#39;).animate({scrollTop: jQuery(&#39;#broadcasting-sdk&#39;).position().top-100}, &#39;slow&#39;);">Telemedicine</a></li>
+               <li><a class="scroll sticky-tab-5" href="javascript:void(0);" onclick="jQuery(&#39;html, body&#39;).animate({scrollTop: jQuery(&#39;#hipaa-Compliance&#39;).position().top-140}, &#39;slow&#39;);">HIPAA Compliance</a></li>
+            </ul>
+      </div>
+      </div>
+      <!-- Beyond API & SDK -->
+      <!-- Chat Apps -->
+      <div class="container chat-apps clearfix" id="rest-orchestration">
+         <div class="heading">
+            <h2 class="wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">Empowering Healthcare Communication Than Ever Before</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Contrive a top-notch connected healthcare ecosystem to Thrive Health-centre Communication</p>
+         </div>
+         <ul>
+            <li class="wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+               <svg width="193.453" height="201.191" viewBox="0 0 193.453 201.191">
+               <defs>
+                     <lineargradient id="ultimate-icons1" gradientUnits="userSpaceOnUse" x1="-5.181" y1="32.996" x2="44.941" y2="9.624">
+                        <stop offset="0" stop-color="#13a2e5"></stop>
+                        <stop offset="1" stop-color="#8500d9"></stop>
+                     </lineargradient>
+                  </defs>
+                  <style>
+                     tspan { white-space:pre }
+                     .gradient-icons { fill: url(#ultimate-icons1) } 
+                  </style>
+                  <g id="Mange_Health_Care_Ecosys" data-name="Mange Health Care Ecosys" transform="translate(-80 0)">
+                     <path data-name="Path 2" d="M130.3,192H83.869A3.869,3.869,0,0,0,80,195.869v30.952a3.869,3.869,0,0,0,3.869,3.869H130.3a3.869,3.869,0,0,0,3.869-3.869V215.214h15.476v-7.738H134.167V195.869A3.869,3.869,0,0,0,130.3,192Zm-3.869,30.952H87.738V199.738h38.691Zm0,0" transform="translate(0 -99.143)"></path>
+                     <path data-name="Path 3" d="M168.988,349.9h46.429a3.869,3.869,0,0,0,3.869-3.869V315.083a3.869,3.869,0,0,0-3.869-3.869H196.072V288h-7.738v23.214H168.988a3.869,3.869,0,0,0-3.869,3.869v11.607H134.167V315.083a3.869,3.869,0,0,0-3.869-3.869H83.869A3.869,3.869,0,0,0,80,315.083v30.952a3.869,3.869,0,0,0,3.869,3.869H130.3a3.869,3.869,0,0,0,3.869-3.869V334.429h30.952v11.607A3.869,3.869,0,0,0,168.988,349.9Zm3.869-30.952h38.691v23.214H172.857Zm-46.429,23.214H87.738V318.952h38.691Zm0,0" transform="translate(0 -148.714)"></path>
+                     <path data-name="Path 4" d="M306.822,64a34.822,34.822,0,1,0,34.821,34.822A34.821,34.821,0,0,0,306.822,64Zm0,61.9A27.083,27.083,0,1,1,333.9,98.822,27.082,27.082,0,0,1,306.822,125.9Zm0,0" transform="translate(-99.143 -33.048)"></path>
+                     <path data-name="Path 5" d="M335.679,81.25a3.869,3.869,0,0,0,3.869-3.869V54.167a3.869,3.869,0,0,0-3.869-3.869h-14.1a51.248,51.248,0,0,0-3.06-7.391l9.982-9.947a3.868,3.868,0,0,0,0-5.479L312.077,11.038a3.863,3.863,0,0,0-5.471,0l-9.965,9.982a51.468,51.468,0,0,0-7.391-3.06V3.869A3.869,3.869,0,0,0,285.381,0H262.167A3.869,3.869,0,0,0,258.3,3.869v14.1a51.469,51.469,0,0,0-7.391,3.06l-9.95-9.982a3.863,3.863,0,0,0-5.471,0L219.038,27.471a3.868,3.868,0,0,0,0,5.479l9.982,9.947a51.153,51.153,0,0,0-3.057,7.4h-14.1A3.869,3.869,0,0,0,208,54.167V77.381a3.869,3.869,0,0,0,3.869,3.869h14.1a51.255,51.255,0,0,0,3.06,7.391l-9.982,9.947a3.868,3.868,0,0,0,0,5.482l16.428,16.4a3.871,3.871,0,0,0,5.471,0l9.95-9.948a51.738,51.738,0,0,0,7.406,3.06v14.1a3.869,3.869,0,0,0,3.869,3.869h23.214a3.869,3.869,0,0,0,3.869-3.869v-14.1a51.513,51.513,0,0,0,7.394-3.06l9.95,9.948a3.87,3.87,0,0,0,5.467,0l16.443-16.406a3.868,3.868,0,0,0,0-5.482l-9.982-9.947a51.21,51.21,0,0,0,3.06-7.387Zm-20.723-4.855A44.251,44.251,0,0,1,310.4,87.386a3.868,3.868,0,0,0,.612,4.689l9.285,9.255-10.961,10.938-9.251-9.263a3.87,3.87,0,0,0-4.685-.608,44.067,44.067,0,0,1-10.991,4.555,3.87,3.87,0,0,0-2.894,3.741V123.81H266.036V110.693a3.869,3.869,0,0,0-2.883-3.741,44.068,44.068,0,0,1-10.991-4.555,3.87,3.87,0,0,0-4.685.608l-9.259,9.259L227.256,101.33l9.285-9.255a3.868,3.868,0,0,0,.612-4.689A44.249,44.249,0,0,1,232.6,76.395a3.869,3.869,0,0,0-3.741-2.883H215.738V58.036h13.117a3.868,3.868,0,0,0,3.737-2.883,44.249,44.249,0,0,1,4.559-10.991,3.868,3.868,0,0,0-.612-4.689l-9.285-9.259,10.965-10.965,9.259,9.285a3.868,3.868,0,0,0,4.689.612,44.067,44.067,0,0,1,10.991-4.555,3.87,3.87,0,0,0,2.879-3.737V7.738h15.476V20.855a3.869,3.869,0,0,0,2.883,3.741,44.067,44.067,0,0,1,10.991,4.555,3.869,3.869,0,0,0,4.7-.612l9.259-9.285,10.965,10.965-9.285,9.259a3.865,3.865,0,0,0-.61,4.689,44.316,44.316,0,0,1,4.557,10.991,3.867,3.867,0,0,0,3.725,2.879H331.81V73.512H318.693a3.868,3.868,0,0,0-3.737,2.883Zm0,0" transform="translate(-66.095)"></path>
+                     <path data-name="Path 6" d="M327.476,104a15.476,15.476,0,1,0,15.476,15.476A15.477,15.477,0,0,0,327.476,104Zm0,23.214a7.738,7.738,0,1,1,7.738-7.738A7.738,7.738,0,0,1,327.476,127.214Zm0,0" transform="translate(-119.797 -53.702)"></path>
+                  </g>
+               </svg>
+
+               <h4>Manage Healthcare Ecosystem</h4>
+               <p>No more paper juggling! Track Patients electronic medical record (EMR) effortlessly within the healthcare messaging app instantly without scrolling the previous histories of patients.</p>
+            </li>
+            <li class="wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+               <svg id="Doc_Pat_Chat" data-name="Doc Pat Chat" width="190.701" height="190.701" viewBox="0 0 190.701 190.701">
+                  <g data-name="Group 2" transform="translate(0 82.723)">
+                     <g data-name="Group 1">
+                        <path data-name="Path 11" d="M67.684,276a3.725,3.725,0,0,0-.822-.135,23.8,23.8,0,0,0,6.593-16.453v-19.6a3.762,3.762,0,0,0-.041-.526c.025-.354.041-.71.041-1.07v-12.4a3.725,3.725,0,0,0-3.725-3.725H44.747a19.1,19.1,0,0,0-19.079,19.079v18.235a23.8,23.8,0,0,0,6.593,16.453,3.719,3.719,0,0,0-.822.135A34.629,34.629,0,0,0,0,310.437V326.35a3.725,3.725,0,0,0,3.725,3.725H95.4a3.725,3.725,0,0,0,3.725-3.725V310.437A34.629,34.629,0,0,0,67.684,276ZM33.118,245.9v-4.724a11.643,11.643,0,0,1,11.629-11.629H66v8.673a7.927,7.927,0,0,1-7.919,7.919H33.118Zm0,7.688H58.086a15.27,15.27,0,0,0,7.919-2.2v8.026a16.443,16.443,0,0,1-32.887,0ZM57.668,283.3l-8.107,8.107L41.455,283.3Zm34.005,39.322H7.449v-7.449H22.906a3.725,3.725,0,0,0,0-7.449H7.585a27.181,27.181,0,0,1,23.56-24.2l15.782,15.782a3.724,3.724,0,0,0,5.267,0l15.782-15.782a27.169,27.169,0,0,1,23.7,26.909Z" transform="translate(0 -222.097)"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 4" transform="translate(91.578)">
+                     <g data-name="Group 3">
+                        <path data-name="Path 12" d="M313.557,53.9a3.728,3.728,0,0,0-.823-.135,23.8,23.8,0,0,0,6.592-16.453v-19.6a3.758,3.758,0,0,0-.041-.526c.025-.354.041-.71.041-1.07V3.725A3.725,3.725,0,0,0,315.6,0H290.619a19.1,19.1,0,0,0-19.079,19.079V37.314a23.8,23.8,0,0,0,6.592,16.453,3.732,3.732,0,0,0-.823.135A34.629,34.629,0,0,0,245.872,88.34v15.913a3.725,3.725,0,0,0,3.725,3.725h29.968a3.725,3.725,0,0,0,0-7.449H253.321V88.341a27.169,27.169,0,0,1,23.7-26.909L292.8,77.214a3.725,3.725,0,0,0,5.267,0l15.782-15.782a27.169,27.169,0,0,1,23.7,26.909v12.188H310.107a3.725,3.725,0,0,0,0,7.449H341.27a3.725,3.725,0,0,0,3.725-3.725V88.341A34.629,34.629,0,0,0,313.557,53.9ZM295.434,69.313l-8.107-8.107H303.54Zm16.443-32a16.443,16.443,0,0,1-32.887,0V31.49h24.968a15.274,15.274,0,0,0,7.919-2.2Zm0-21.191a7.927,7.927,0,0,1-7.919,7.919H278.99V19.079A11.643,11.643,0,0,1,290.62,7.449h21.258Z" transform="translate(-245.872)"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 6" transform="translate(137.416 100.528)">
+                     <g data-name="Group 5">
+                        <path data-name="Path 13" d="M375.3,270.991a3.723,3.723,0,1,0,1.091,2.633A3.753,3.753,0,0,0,375.3,270.991Z" transform="translate(-368.94 -269.9)"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 8">
+                     <g data-name="Group 7">
+                        <path data-name="Path 14" d="M99.6,52.118,84.021,36.542V18.623A18.644,18.644,0,0,0,65.4,0H18.623A18.644,18.644,0,0,0,0,18.623V51.4A18.644,18.644,0,0,0,18.623,70.023H65.4A18.518,18.518,0,0,0,82.63,58.477H96.964A3.725,3.725,0,0,0,99.6,52.118ZM79.913,51.027a3.725,3.725,0,0,0-3.63,2.89A11.113,11.113,0,0,1,65.4,62.574H18.623A11.187,11.187,0,0,1,7.449,51.4V18.623A11.187,11.187,0,0,1,18.623,7.449H65.4A11.187,11.187,0,0,1,76.572,18.623V38.084a3.725,3.725,0,0,0,1.091,2.634L87.972,51.027Z"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 10" transform="translate(90.012 120.678)">
+                     <g data-name="Group 9">
+                        <path data-name="Path 15" d="M323.732,324H276.957a18.518,18.518,0,0,0-17.232,11.546H245.391a3.725,3.725,0,0,0-2.634,6.358l15.577,15.577V375.4a18.644,18.644,0,0,0,18.623,18.623h46.775A18.644,18.644,0,0,0,342.355,375.4V342.623A18.644,18.644,0,0,0,323.732,324Zm11.174,51.4a11.187,11.187,0,0,1-11.174,11.174H276.957A11.187,11.187,0,0,1,265.784,375.4V355.939a3.725,3.725,0,0,0-1.091-2.634L254.383,343h8.059a3.725,3.725,0,0,0,3.63-2.89,11.113,11.113,0,0,1,10.885-8.657h46.775a11.187,11.187,0,0,1,11.174,11.174Z" transform="translate(-241.666 -324)"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 12" transform="translate(139.301 144.688)">
+                     <g data-name="Group 11">
+                        <path data-name="Path 16" d="M400.13,389.554a3.724,3.724,0,0,0-5.267,0l-9.9,9.9-4.6-4.6a3.725,3.725,0,1,0-5.268,5.268l7.238,7.238a3.724,3.724,0,0,0,5.267,0l12.535-12.535A3.725,3.725,0,0,0,400.13,389.554Z" transform="translate(-373.999 -388.463)"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 14" transform="translate(33.147 12.675)">
+                     <g data-name="Group 13">
+                        <path data-name="Path 17" d="M114.79,46.038a12.945,12.945,0,0,0-11.975-11.975A12.808,12.808,0,0,0,93.1,37.5a12.96,12.96,0,0,0-4.1,9.442,3.725,3.725,0,1,0,7.45,0,5.465,5.465,0,1,1,6.666,5.333,6.255,6.255,0,0,0-4.927,6.133V60.4a3.725,3.725,0,1,0,7.449,0V59.315A12.845,12.845,0,0,0,114.79,46.038Z" transform="translate(-88.994 -34.032)"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 16" transform="translate(42.338 49.571)">
+                     <g data-name="Group 15">
+                        <path data-name="Path 18" d="M120.028,134.181a3.723,3.723,0,1,0,1.091,2.633A3.753,3.753,0,0,0,120.028,134.181Z" transform="translate(-113.67 -133.09)"></path>
+                     </g>
+                  </g>
+                  <g data-name="Group 18" transform="translate(34.08 168.353)">
+                     <g data-name="Group 17">
+                        <path data-name="Path 19" d="M97.858,453.091a3.723,3.723,0,1,0,1.091,2.633A3.753,3.753,0,0,0,97.858,453.091Z" transform="translate(-91.5 -452)"></path>
+                     </g>
+                  </g>
+               </svg>
+
+               <h4>Doctor⇆Patient Conversation </h4>
+               <p>Create immense communication possibilities between patients &amp; doctors instantly. Enable patients to message directly with healthcare experts in real-time to share &amp; discuss health issues, queries &amp; diagnosis.</p>
+            </li>
+            <li class="wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+               <svg width="222.6" height="180.868" viewBox="0 0 222.6 180.868">
+                  <g id="encrypted_messaging" data-name="encrypted messaging" transform="translate(0 -47.996)">
+                     <path data-name="Path 20" d="M304,128h62.605v6.956H304Zm0,0" transform="translate(-171.833 -45.224)"></path>
+                     <path data-name="Path 22" d="M384,168h45.525v6.956H384Zm0,0" transform="translate(-234.753 -67.833)"></path>
+                     <path data-name="Path 23" d="M416,208h31.3v6.956H416Zm0,0" transform="translate(-252.531 -90.443)"></path>
+                     <path data-name="Path 32" d="M416,208h22.763v6.956H416Zm0,0" transform="translate(-243.991 -73.053)"></path>
+                     <path data-name="Path 30" d="M168.666,220.815a20.868,20.868,0,1,0-34.084,16.106l-8.476,39.543H169.49l-8.476-39.543a20.737,20.737,0,0,0,7.652-16.106Zm-33.957,48.693,7.652-35.7-2.031-1.3a13.913,13.913,0,1,1,14.935,0l-2.031,1.3,7.652,35.7Zm0,0" transform="translate(-71.28 -85.864)"></path>
+                     <path data-name="Path 31" d="M211.658,85.215l8.761-35.039-35.039,8.761A76.167,76.167,0,0,0,86.632,76.52,76.414,76.414,0,0,0,10.939,191.645L2.177,226.682l35.039-8.761a76.26,76.26,0,0,0,98.891-17.665,74.259,74.259,0,0,0,9.972.78A76.416,76.416,0,0,0,211.658,85.215ZM76.518,221.9A69.387,69.387,0,0,1,39.65,211.249l-1.252-.79-26.663,6.664L18.4,190.468l-.79-1.252A69.513,69.513,0,1,1,76.518,221.9Zm69.561-27.825q-2.555,0-5.321-.246A76.432,76.432,0,0,0,94.5,77.98a69.214,69.214,0,0,1,88.448-12.372l1.252.79,26.656-6.664L204.2,86.39l.79,1.252a69.468,69.468,0,0,1-58.908,106.436Zm0,0" transform="translate(0 0)"></path>
+                  </g>
+               </svg>
+
+               <h4>Encrypted <br>Messaging</h4>
+               <p>Ensuring the messages &amp; media files transmitted between the patients and medical expert on the healthcare messaging software is encrypted end-to-end. MirrorFly fortifies the privacy of the patient’s personal health information.</p>
+            </li>
+            <li class="wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+               <svg width="200.974" height="200.133" viewBox="0 0 200.974 200.133">
+                  <g id="Dedicated_Hosting" data-name="Dedicated Hosting" transform="translate(0 -0.125)">
+                     <path data-name="Path 7" d="M21.073,6.125A15.073,15.073,0,1,0,36.146,21.2,15.091,15.091,0,0,0,21.073,6.125Zm0,23.447A8.374,8.374,0,1,1,29.447,21.2,8.383,8.383,0,0,1,21.073,29.572Z" transform="translate(14.097 14.097)"></path>
+                     <circle data-name="Ellipse 1" cx="3.35" cy="3.35" r="3.35" transform="translate(164.129 26.922)"></circle>
+                     <circle data-name="Ellipse 2" cx="3.35" cy="3.35" r="3.35" transform="translate(150.731 26.922)"></circle>
+                     <circle data-name="Ellipse 3" cx="3.35" cy="3.35" r="3.35" transform="translate(170.828 36.97)"></circle>
+                     <circle data-name="Ellipse 4" cx="3.35" cy="3.35" r="3.35" transform="translate(157.43 36.97)"></circle>
+                     <circle data-name="Ellipse 5" cx="3.35" cy="3.35" r="3.35" transform="translate(137.332 26.922)"></circle>
+                     <circle data-name="Ellipse 6" cx="3.35" cy="3.35" r="3.35" transform="translate(144.031 36.97)"></circle>
+                     <circle data-name="Ellipse 7" cx="3.35" cy="3.35" r="3.35" transform="translate(123.934 26.922)"></circle>
+                     <circle data-name="Ellipse 8" cx="3.35" cy="3.35" r="3.35" transform="translate(130.633 36.97)"></circle>
+                     <circle data-name="Ellipse 9" cx="3.35" cy="3.35" r="3.35" transform="translate(110.536 26.922)"></circle>
+                     <circle data-name="Ellipse 10" cx="3.35" cy="3.35" r="3.35" transform="translate(117.235 36.97)"></circle>
+                     <path data-name="Path 8" d="M21.073,25.125A15.073,15.073,0,1,0,36.146,40.2,15.091,15.091,0,0,0,21.073,25.125Zm0,23.447A8.374,8.374,0,1,1,29.447,40.2,8.383,8.383,0,0,1,21.073,48.572Z" transform="translate(14.097 58.739)"></path>
+                     <path data-name="Path 9" d="M21.073,44.125A15.073,15.073,0,1,0,36.146,59.2,15.091,15.091,0,0,0,21.073,44.125Zm0,23.447A8.374,8.374,0,1,1,29.447,59.2,8.383,8.383,0,0,1,21.073,67.572Z" transform="translate(14.097 103.381)"></path>
+                     <path data-name="Path 10" d="M200.974,55.031V15.56A15.452,15.452,0,0,0,185.539.125H15.435A15.452,15.452,0,0,0,0,15.56V55.028A15.344,15.344,0,0,0,5.952,67.113,15.361,15.361,0,0,0,0,79.2V118.67a15.344,15.344,0,0,0,5.952,12.085A15.361,15.361,0,0,0,0,142.843v39.468a15.452,15.452,0,0,0,15.435,15.435H108.8a160.08,160.08,0,0,0,28.528,2.512c29.047,0,59.676-7.533,63.29-21.95a3.316,3.316,0,0,0,.352-1.494V83.864a3.286,3.286,0,0,0-.322-1.393c-1.162-4.9-5.52-9.034-11.931-12.343A15.455,15.455,0,0,0,200.974,55.031ZM6.7,118.673V79.2a8.746,8.746,0,0,1,8.736-8.736H85.307c-6.059,3.252-10.173,7.265-11.295,12a3.3,3.3,0,0,0-.322,1.393v43.544H15.435A8.746,8.746,0,0,1,6.7,118.673ZM82.486,98.117c.151.1.312.194.466.291q.884.553,1.842,1.085c.184.1.362.2.546.3.78.419,1.591.827,2.435,1.219.134.064.278.124.412.184.74.338,1.5.663,2.284.981.231.094.459.188.69.278.924.362,1.866.717,2.84,1.052.054.017.107.034.161.054.931.318,1.889.623,2.864.918.261.08.526.157.79.234.965.281,1.943.556,2.944.817.08.02.157.044.238.064,1.079.278,2.181.536,3.3.787.281.064.566.124.847.184q1.437.312,2.9.593c.194.037.389.077.583.114q1.723.322,3.487.6l.841.131q1.462.226,2.948.422c.271.037.539.074.814.107q1.8.226,3.621.419c.245.027.492.047.737.07,1.022.1,2.05.191,3.078.275.312.023.62.05.931.074,1.229.09,2.465.171,3.7.234.174.01.352.013.529.023q1.633.08,3.273.124c.328.01.657.02.988.027,1.249.027,2.5.047,3.745.047s2.5-.02,3.745-.047c.328-.007.657-.017.988-.027,1.092-.03,2.181-.07,3.273-.124.178-.01.352-.013.529-.023,1.236-.064,2.472-.144,3.7-.234.312-.023.62-.047.931-.074,1.032-.08,2.057-.174,3.078-.275l.737-.07q1.824-.191,3.621-.419c.271-.033.543-.07.814-.107.988-.131,1.973-.271,2.948-.422.281-.044.563-.084.841-.131q1.764-.281,3.487-.6c.2-.037.389-.077.583-.114q1.472-.281,2.9-.593c.285-.064.566-.124.847-.184,1.115-.251,2.221-.509,3.3-.787.08-.02.157-.044.238-.064,1-.258,1.98-.533,2.944-.817.265-.077.529-.154.79-.234.975-.295,1.933-.6,2.864-.918.054-.017.107-.033.161-.054.975-.338,1.919-.69,2.84-1.052.234-.09.462-.184.69-.278.784-.318,1.544-.643,2.284-.981.137-.064.278-.121.412-.184.844-.392,1.651-.8,2.435-1.219.188-.1.365-.2.546-.3q.955-.528,1.842-1.085c.154-.1.315-.191.466-.291q1.04-.673,1.973-1.387c.04-.03.087-.057.127-.087V113.35a3.267,3.267,0,0,0-.07,1.182,3.871,3.871,0,0,1,.08.734,4.843,4.843,0,0,1-.194,1.115,5.811,5.811,0,0,1-.281.868,6.755,6.755,0,0,1-.389.757,8.645,8.645,0,0,1-.482.757,11.058,11.058,0,0,1-.881,1.045c-.124.134-.248.268-.382.4-7.091,6.86-28.016,13.057-54.33,13.057-26.3,0-47.212-6.19-54.317-13.047-.147-.147-.281-.291-.415-.439a11.25,11.25,0,0,1-.847-1,8.363,8.363,0,0,1-.509-.8,6.916,6.916,0,0,1-.368-.717,5.724,5.724,0,0,1-.295-.908,4.594,4.594,0,0,1-.194-1.089,4.217,4.217,0,0,1,.07-.71,3.338,3.338,0,0,0-.07-1.29V96.639c.04.03.087.057.127.087Q81.446,97.44,82.486,98.117ZM193.8,147.4a6.755,6.755,0,0,1-.389.757,8.643,8.643,0,0,1-.482.757,11.054,11.054,0,0,1-.881,1.045c-.124.134-.248.268-.382.4-7.091,6.86-28.016,13.057-54.33,13.057-26.3,0-47.212-6.19-54.317-13.047-.147-.147-.281-.291-.415-.439a11.249,11.249,0,0,1-.847-1,8.362,8.362,0,0,1-.509-.8,6.918,6.918,0,0,1-.368-.717,5.725,5.725,0,0,1-.295-.908,4.693,4.693,0,0,1-.167-.948v-.4c.013-.151.02-.3.044-.452a3.178,3.178,0,0,0-.047-.854l-.02-16.436v-.623c.134.1.291.2.432.3.422.315.864.623,1.316.928.368.245.75.486,1.139.727.6.368,1.2.734,1.846,1.085a.073.073,0,0,1,.017.01c6.987,3.808,16.594,6.558,27.215,8.223.08.013.161.023.241.037,3.427.533,6.944.948,10.521,1.253.76.064,1.517.131,2.284.184q1.12.08,2.244.141,1.517.085,3.035.147c.59.023,1.179.05,1.772.067,1.631.047,3.259.08,4.884.08s3.249-.03,4.874-.077c.6-.017,1.189-.044,1.785-.067q1.507-.06,3.008-.144,1.136-.065,2.264-.144c.754-.054,1.5-.117,2.248-.181,3.611-.3,7.161-.727,10.618-1.263l.154-.023c11.606-1.815,21.987-4.934,29.078-9.308.385-.238.767-.476,1.132-.72.452-.3.894-.61,1.313-.924.151-.111.322-.214.469-.328V143.5a3.267,3.267,0,0,0-.07,1.182,5.372,5.372,0,0,1,.067.734,4.843,4.843,0,0,1-.194,1.115A5.831,5.831,0,0,1,193.8,147.4ZM15.435,191.05A8.746,8.746,0,0,1,6.7,182.315V142.843a8.746,8.746,0,0,1,8.736-8.736H73.691v46.057h.991c.054.124.131.245.191.368.117.251.248.5.382.744a15.131,15.131,0,0,0,.931,1.467,17,17,0,0,0,1.136,1.42c.208.234.415.466.64.7a26.626,26.626,0,0,0,4.6,3.721c.06.04.124.08.188.121a42,42,0,0,0,4.18,2.351h-71.5Zm178.84-15.093c-.027.1-.05.211-.067.315-1.37,8.35-24.552,17.29-56.876,17.29a151.4,151.4,0,0,1-27.721-2.425l0-.027c-16.657-3.152-25.875-8.474-28.455-12.963a.017.017,0,0,1-.007-.013c-.117-.208-.2-.412-.291-.613a5.715,5.715,0,0,1-.405-1.249l-.027-19.31c.121.094.265.181.389.275.422.315.864.623,1.316.928.368.245.75.486,1.139.727.6.368,1.2.734,1.846,1.085a.072.072,0,0,1,.017.01c6.987,3.808,16.594,6.558,27.215,8.223.08.013.161.023.241.037,3.427.533,6.944.948,10.521,1.253.76.064,1.517.131,2.284.184q1.12.08,2.244.141,1.517.085,3.035.147c.59.023,1.179.05,1.772.067,1.631.047,3.259.08,4.884.08s3.249-.03,4.874-.077c.6-.017,1.189-.044,1.785-.067q1.507-.06,3.008-.144,1.136-.065,2.264-.144c.754-.054,1.5-.117,2.248-.181,3.611-.3,7.161-.727,10.618-1.263l.154-.023c11.606-1.815,21.987-4.934,29.078-9.308.385-.238.767-.476,1.132-.72.452-.3.894-.61,1.313-.924.151-.111.322-.214.469-.328v19.019Zm0-90.837c0,8.5-24.355,18-56.943,18s-56.943-9.506-56.943-18a4.821,4.821,0,0,1,.228-1.3,6.214,6.214,0,0,1,.583-1.33l.03-.06c1.115-1.862,3.363-3.865,6.823-5.8.147-.08.3-.161.449-.241q.889-.482,1.879-.955c.767-.358,1.554-.717,2.4-1.062.164-.07.335-.137.506-.2a86.971,86.971,0,0,1,13.861-4.053c1.651-.348,3.333-.677,5.061-.965.459-.077.908-.157,1.373-.231a163.48,163.48,0,0,1,47.487,0c.472.074.928.157,1.393.234,1.718.285,3.39.61,5.028.958C183.818,73.591,194.275,79.563,194.275,85.12Zm0-30.089a8.746,8.746,0,0,1-8.736,8.736H170.031c-.194-.044-.409-.07-.6-.114-2.2-.476-4.458-.9-6.769-1.269-.224-.033-.449-.07-.673-.1a164.056,164.056,0,0,0-49.3,0c-.231.033-.459.07-.69.1-2.3.368-4.559.794-6.749,1.266-.2.044-.419.07-.616.114h-89.2A8.741,8.741,0,0,1,6.7,55.031V15.56a8.746,8.746,0,0,1,8.736-8.736h170.1a8.747,8.747,0,0,1,8.739,8.736Z" transform="translate(0 0)"></path>
+                  </g>
+               </svg>
+
+               <h4>Dedicated<br> Hosting</h4>
+               <p>Every enterprise-grade healthcare app demand flexible hosting. Choose on-premises to host with your own provider or with MirrorFly’s cloud infrastructure with whole ownership.</p>
+            </li>
+         </ul>
+      </div>
+      <!-- Features API -->
+      <section class="features-api same-features clearfix " id="feature-enriched">
+         <div class="container clearfix">
+            <div class="heading">
+               <h3 class="wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">Explore Multiple Features for Better Patient Care</h3>
+               <p class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Bringing the personalized in-app messaging experience to millions of patient’s and medical professionals for digital interaction </p>
+            </div>
+            <div class="features-communication clearfix">
+               <div class="features-img wow fadeInLeft" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                  <img src="./h_m/doctor-patient.png" class="lazy-communication" alt="create video chat app android">
+               </div>
+               <div class="features-content">
+                  <h4 class="heading-features">Enhancing Doctors Patient’s Collaboration</h4>
+                  <p class="desp">Build a connected real-time ecosystem within your healthcare application by integrating customizable chat APIs &amp; SDKs to
+                      enable patients to reach out to you at any time.      </p> 
+
+ 
+                  <div class="accordion active-acc accordion-comm">
+                     <svg width="193.453" height="173.805" viewBox="0 0 193.453 173.805">
+                        <g id="_1_to_1_doc_pat_" data-name="1 to 1 doc pat " transform="translate(0 0)">
+                           <path data-name="Path 33" d="M249.778,100a3.778,3.778,0,1,0,3.778,3.778A3.78,3.78,0,0,0,249.778,100Zm0,0" transform="translate(-153.052 -62.217)"></path>
+                           <path data-name="Path 34" d="M83.778,267.557A3.778,3.778,0,1,0,80,263.778,3.78,3.78,0,0,0,83.778,267.557Zm0,0" transform="translate(-49.773 -161.763)"></path>
+                           <path data-name="Path 35" d="M126.953,0C92.938,0,65.019,23.452,62.86,52.993,30.465,54.618,0,77.977,0,109.573a52.8,52.8,0,0,0,14.736,36.134,22.979,22.979,0,0,1-6.072,21.649,3.778,3.778,0,0,0,2.671,6.45,41.678,41.678,0,0,0,28.877-11.672A86.1,86.1,0,0,0,66.5,166.248c34.011,0,61.927-23.447,64.092-52.981a84.962,84.962,0,0,0,22.65-4.031,41.678,41.678,0,0,0,28.877,11.672,3.778,3.778,0,0,0,2.671-6.45,22.979,22.979,0,0,1-6.072-21.649,52.8,52.8,0,0,0,14.736-36.134C193.453,23.846,160.641,0,126.953,0ZM66.5,158.691c-8.918,0-19.079-1.75-25.886-4.459a3.779,3.779,0,0,0-4.186.959A34.092,34.092,0,0,1,19.47,165.255a30.557,30.557,0,0,0,2.3-22.489,3.771,3.771,0,0,0-.924-1.6,45.405,45.405,0,0,1-13.294-31.6c0-26.626,26.992-49.119,58.943-49.119,30.171,0,56.676,20.98,56.676,49.119,0,27.085-25.424,49.119-56.676,49.119ZM172.6,88.272a3.789,3.789,0,0,0-.924,1.6,30.557,30.557,0,0,0,2.3,22.489,34.082,34.082,0,0,1-16.957-10.063,3.781,3.781,0,0,0-4.186-.959c-5.9,2.347-14.315,3.972-22.26,4.364-1.1-14.288-8.231-27.718-20.417-37.689h49.284a3.778,3.778,0,1,0,0-7.557H98.555a70.468,70.468,0,0,0-28.119-7.446C72.607,27.631,97.126,7.556,126.953,7.556,158.9,7.556,185.9,30.05,185.9,56.675a45.406,45.406,0,0,1-13.294,31.6Zm0,0"></path>
+                           <path data-name="Path 36" d="M171.386,260H123.778a3.778,3.778,0,0,0,0,7.557h47.608a3.778,3.778,0,0,0,0-7.557Zm0,0" transform="translate(-74.66 -161.763)"></path>
+                           <path data-name="Path 37" d="M146.5,320H83.778a3.778,3.778,0,0,0,0,7.557H146.5a3.778,3.778,0,0,0,0-7.557Zm0,0" transform="translate(-49.773 -199.092)"></path>
+                           <path data-name="Path 38" d="M337.386,100H289.778a3.778,3.778,0,0,0,0,7.557h47.608a3.778,3.778,0,0,0,0-7.557Zm0,0" transform="translate(-177.938 -62.217)"></path>
+                        </g>
+                     </svg>
+                     <h4>1-to-1 Doctor-patient Chat</h4>
+                     <div class="comm-desc"><p>Enable patients to communicate directly &amp; privately with doctors in real-time. Instant conversation betters patient care.</p>
+                     <ul class="one-to-one">
+                        <li>   Physician to Patient discussion</li>
+                        <li>Pharmacy rep to doctors interaction</li>
+                        <li>Doctor to Doctor conversation</li>
+                        <li>Doctor to Nurse communication</li>
+                     </ul>
+      </div>
+                     </div>
+                  <div class="accordion accordion-comm">
+                     <svg version="1.1" x="0px" y="0px" viewBox="0 0 36 37" style="enable-background:new 0 0 36 37;" xml:space="preserve">
+                        <g>
+                           <g>
+                              <path d="M29.3,19.5v-3.7c0-3.2-2.6-5.8-5.8-5.8H17V9.2c0-2.3-1.8-4.1-4.1-4.1H4.2C2,5.1,0.1,6.9,0.1,9.2v2.5
+                              c0,2.3,1.8,4.1,4.1,4.1h0.4c0,0,0,0,0,0v13.1c0,0.2,0.1,0.5,0.3,0.6c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.3,0,0.4-0.1l5.4-4.1h12.5
+                              C26.7,25.3,29.3,22.7,29.3,19.5z M4.2,14.5c-1.6,0-2.8-1.3-2.8-2.8V9.2c0-1.6,1.3-2.8,2.8-2.8h8.7c1.6,0,2.8,1.3,2.8,2.8v7.1
+                              L13,14.6c-0.1-0.1-0.2-0.1-0.3-0.1h-2c0,0-3.7,0-4.1,0H4.2z M10.8,24c-0.1,0-0.3,0-0.4,0.1l-4.5,3.4V15.8c0,0,0,0,0,0h6.6l3.5,2.1
+                              c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1c0.2-0.1,0.3-0.3,0.3-0.6v-6.1h6.4c2.5,0,4.6,2,4.6,4.6v3.7c0,2.5-2,4.6-4.6,4.6
+                              H10.8z M33,0.1H21.7c-1.6,0-3,1.3-3,3c0,1.6,1.3,3,3,3h8.4l1,2.6C31.2,8.9,31.5,9,31.7,9c0.3,0,0.5-0.2,0.6-0.4l1-2.6
+                              C34.8,5.9,36,4.6,36,3C36,1.4,34.7,0.1,33,0.1z M33,4.8h-0.2c-0.3,0-0.5,0.2-0.6,0.4l-0.6,1.5l-0.6-1.5c-0.1-0.2-0.3-0.4-0.6-0.4
+                              h-8.8C20.8,4.8,20,4,20,3s0.8-1.7,1.7-1.7H33c0.9,0,1.7,0.8,1.7,1.7S34,4.8,33,4.8z M29.3,28.8H28c-0.3,0-0.6,0.3-0.6,0.6
+                              c0,0.3,0.3,0.6,0.6,0.6h1.4c1,0,1.8,0.8,1.8,1.7c0,1-0.8,1.9-1.8,1.9h-0.1c-0.2,0-0.5,0.1-0.6,0.4l-0.4,0.8L28,34
+                              c-0.1-0.2-0.3-0.4-0.6-0.4h-6.5c-1,0-1.8-0.8-1.8-1.7c0-1,0.8-1.9,1.8-1.9h3c0.3,0,0.6-0.3,0.6-0.6s-0.3-0.6-0.6-0.6h-2.9
+                              c-1.7,0-3.1,1.3-3.1,3c0,1.7,1.3,3.1,3,3.1H27l0.8,1.7c0.1,0.2,0.3,0.4,0.6,0.4h0c0.2,0,0.5-0.1,0.6-0.4l0.7-1.7
+                              c1.5-0.2,2.7-1.4,2.7-3C32.5,30.2,31,28.8,29.3,28.8z"></path>
+                           </g>
+                        </g>
+                     </svg>
+                     <h4>Communication Hub for a Connected Ecosystem</h4>
+                     <div class="comm-desc accordion-desc"><p>Reach a vast number of patients instantly with a single click. With the patient-centric group, let doctors establish communication on patient’s query, problems in a large platform.</p>
+                     <ul class="one-to-one">
+                        <li>Doctors discussion</li>
+                        <li>Doctor-patient community</li>
+                        <li>Medical professionals group chat</li>
+                    </ul>
+                     </div>
+                  </div>
+                  <div class="accordion accordion-comm">
+                     <svg width="467.681" height="389.761" viewBox="0 0 467.681 389.761">
+                        <g data-name="Group 2" transform="translate(-1631.658 464.826)">
+                           <path data-name="Forma 1" d="M29.932,209.8a30.172,30.172,0,0,1-21.053-8.869A28.641,28.641,0,0,1,0,179.9V53.718a30.106,30.106,0,0,1,8.878-21.03,28.7,28.7,0,0,1,21.053-8.869H71.784v-.507A23.373,23.373,0,0,1,95.375,0h76.1a23.225,23.225,0,0,1,16.488,6.841,22.742,22.742,0,0,1,6.848,16.47v.507h42.107a28.7,28.7,0,0,1,21.053,8.869,28.641,28.641,0,0,1,8.878,21.03V179.9a30.106,30.106,0,0,1-8.878,21.03,28.7,28.7,0,0,1-21.053,8.869ZM18.263,42.062a16.257,16.257,0,0,0-4.82,11.655V179.9a16.446,16.446,0,0,0,16.488,16.469H236.915A16.446,16.446,0,0,0,253.4,179.9h.253V53.718a16.445,16.445,0,0,0-16.487-16.469H188.213a6.817,6.817,0,0,1-6.848-6.842V23.058a9.945,9.945,0,0,0-2.79-7.094,9.969,9.969,0,0,0-7.1-2.788H95.628a9.967,9.967,0,0,0-7.1,2.788,9.945,9.945,0,0,0-2.791,7.094v7.348a6.816,6.816,0,0,1-6.848,6.842H29.932A16.291,16.291,0,0,0,18.263,42.062ZM89.287,160.9a62.511,62.511,0,1,1,44.137,18.243A62.409,62.409,0,0,1,89.287,160.9Zm9.639-78.3a49.492,49.492,0,0,0-14.2,34.46,48.41,48.41,0,0,0,14.2,34.46,49.028,49.028,0,0,0,68.994,0,47.386,47.386,0,0,0,14.2-34.46,48.413,48.413,0,0,0-14.2-34.46,49.6,49.6,0,0,0-34.5-14.19A48.518,48.518,0,0,0,98.926,82.6ZM211.3,66.643a12.43,12.43,0,1,1,12.43,12.417A12.423,12.423,0,0,1,211.3,66.643Z" transform="translate(1729.412 -373.508)"></path>
+                           <path data-name="Path 3" d="M909,300.089h57.316s14.572,1.975,14.572-12.629V218" transform="translate(1108.26 -380.288)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="10"></path>
+                           <path data-name="Path 6" d="M0,82.088H57.316s14.572,1.975,14.572-12.629V0" transform="translate(1713.737 -377.602) rotate(180)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="10"></path>
+                           <path data-name="Path 4" d="M0,82.088H64.453s14.572,1.975,14.572-12.629V0" transform="translate(2012.116 -380.756) rotate(-90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="10"></path>
+                           <path data-name="Path 5" d="M0,82.088H64.453s14.572,1.975,14.572-12.629V0" transform="translate(1718.882 -159.135) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="10"></path>
+                        </g>
+                       </svg>
+                     <h4>Scale Video Calls Globally &amp; Across Devices </h4>
+                     <div class="comm-desc accordion-desc"><p>Establish live video conversation between patients and doctors to discuss everything about the health concerns across any devices. Bring doctor-patient communication with other healthcare professionals in much closer contact with video conferencing. Reach million users through conferencing.  </p>
+                     <ul class="one-to-one">
+                        <li> Doctors Video Conferencing</li>
+                        <li>Doctor-patient video chat</li>
+                        <li>Healthcare Video Seminars</li>
+                    </ul>
+                     </div>
+        
+
+                  </div>
+                  <div class="accordion accordion-comm">
+                     <svg width="194.903" height="162.42" viewBox="0 0 194.903 162.42">
+                        <g id="Rich_Media_Sharing" data-name="Rich Media Sharing" transform="translate(0 -42.666)">
+                           <g id="Group_20" data-name="Group 20" transform="translate(0 42.666)">
+                              <g data-name="Group 19">
+                              <path data-name="Path 39" d="M128,101.96a16.242,16.242,0,1,0,16.242-16.242A16.258,16.258,0,0,0,128,101.96Zm24.363,0a8.121,8.121,0,1,1-8.121-8.121A8.132,8.132,0,0,1,152.363,101.96Z" transform="translate(-79.274 -69.329)"></path>
+                              <path id="Path_40" data-name="Path 40" d="M101.512,156.36H16.242A7.987,7.987,0,0,1,9.6,152.647l39.121-39.125,21.345,21.345a4.06,4.06,0,1,0,5.742-5.742l-6.948-6.948,32.663-33L148.449,136.1a4.06,4.06,0,0,0,5.742-5.742L104.383,80.547a4.057,4.057,0,0,0-2.871-1.19,3.022,3.022,0,0,0-2.887,1.206L63.117,116.431,51.6,104.91a4.059,4.059,0,0,0-5.742,0L8.121,142.644V58.908a8.131,8.131,0,0,1,8.121-8.121H146.177a8.132,8.132,0,0,1,8.121,8.121V120.49a4.061,4.061,0,1,0,8.121,0V58.908a16.258,16.258,0,0,0-16.242-16.242H16.242A16.258,16.258,0,0,0,0,58.908v89.331a16.258,16.258,0,0,0,16.242,16.242h85.27a4.061,4.061,0,0,0,0-8.121Z" transform="translate(0 -42.666)"></path>
+                              <path id="Path_41" data-name="Path 41" d="M363.634,304.726a16.139,16.139,0,0,0-12.183,5.613L330.78,300a15.775,15.775,0,0,0,0-6.792l20.671-10.339a16.008,16.008,0,1,0-3.691-7.235L327.09,285.976a16.242,16.242,0,1,0,0,21.262l20.673,10.337a16.236,16.236,0,1,0,15.873-12.848Zm0-40.6a8.121,8.121,0,1,1-8.121,8.121A8.132,8.132,0,0,1,363.634,264.121Zm-48.726,40.6a8.121,8.121,0,1,1,8.121-8.121A8.132,8.132,0,0,1,314.908,304.726Zm48.726,24.363a8.121,8.121,0,1,1,8.121-8.121A8.132,8.132,0,0,1,363.634,329.089Z" transform="translate(-184.973 -174.79)"></path>
+                              </g>
+                           </g>
+                        </g>
+                     </svg>
+                     <h4>Rich Media Sharing</h4>
+                     <div class="comm-desc accordion-desc"><p>Share multiple medical records such as X-rays, Images, MRIs to medical experts to view the records in real-time and initiate the treatment process without letting it to last minute. </p>
+                     <ul class="one-to-one">
+                        <li>    Prescription Sharing</li>
+                        <li>X-rays &amp; Images</li>
+                        <li>Reports</li>
+                    </ul>
+                     </div>
+                    </div>
+                  <div class="accordion accordion-comm">
+                     <svg version="1.1" viewBox="0 0 31 30" style="enable-background:new 0 0 31 30;" xml:space="preserve">
+                        <g>
+                           <g>
+                              <path d="M19.4,12.6H7c-0.3,0-0.5,0.2-0.5,0.5c0,0.3,0.2,0.5,0.5,0.5h12.4c0.3,0,0.5-0.2,0.5-0.5C19.9,12.8,19.6,12.6,19.4,12.6z
+                                 M7,9.6h5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5H7c-0.3,0-0.5,0.2-0.5,0.5C6.5,9.4,6.7,9.6,7,9.6z M19.4,16.6H7
+                                 c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h12.4c0.3,0,0.5-0.2,0.5-0.5S19.6,16.6,19.4,16.6z M19.9,21.1c0-0.3-0.2-0.5-0.5-0.5H7
+                                 c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h12.4C19.6,21.6,19.9,21.3,19.9,21.1z M7,24.5c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5
+                                 h7.2c0.3,0,0.5-0.2,0.5-0.5s-0.2-0.5-0.5-0.5H7z M3.5,3.7h12.4v7h7v8.7h1V9.9l-2.5-2.5V0.2H0v27.3h2.5V30h13.2l0-1H3.5V3.7z
+                                 M22.1,9.6h-5.3V4.4l4.5,4.5L22.1,9.6z M2.5,26.5H1V1.2h19.4v5.3l-3.8-3.8H2.5V26.5z M30.9,23.2l-5.3-4.4c-0.1-0.1-0.3-0.1-0.4,0
+                                 C25,18.8,25,19,25,19.1v2.3c-3.4,0.1-5.3,1.6-6.3,2.8c-1.3,1.5-1.7,3.4-1.7,4.5c0,0.2,0.1,0.3,0.3,0.3c0,0,0.1,0,0.1,0
+                                 c0.1,0,0.2-0.1,0.3-0.2c1.8-3.2,5.2-3.3,7.4-3.3v2.3c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0,0.4,0l5.3-4.4c0.1-0.1,0.1-0.2,0.1-0.3
+                                 C31,23.4,31,23.3,30.9,23.2z M25.7,27.2v-1.9c0-0.1,0-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.3-0.1c-2.1,0-5.3,0-7.5,2.5
+                                 c0.5-2.2,2.4-5.3,7.5-5.3c0.2,0,0.3-0.2,0.3-0.4v-1.9l4.4,3.6L25.7,27.2z"></path>
+                           </g>
+                        </g>
+                     </svg>
+                     <h4>File Sharing</h4>
+                     <p class="comm-desc accordion-desc">Experience easy sharing of files to N number of users within a group or individual through drag-and-drop option. Share any number of file formats that includes documents, multimedia (audio/video), images and graphic files.</p>
+                  </div>
+                  <a href="https://www.mirrorfly.com/chat-features.php" class="button-link wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Explore More
+                     <i><svg viewBox="0 0 16 16" width="100%" height="100%"><path d="M2 6.8h9.6L9.29 4.028A1.26 1.26 0 0 1 9 3.2c0-.59.407-1.2 1-1.2.266 0 .497.116.69.348l3.979 4.775c.164.197.331.44.331.877s-.14.648-.323.868l-3.987 4.784c-.193.232-.425.348-.69.348-.594 0-1-.61-1-1.2 0-.31.093-.592.29-.828L11.6 9.2H2c-.552 0-1-.538-1-1.2 0-.662.448-1.2 1-1.2z"></path></svg></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="features-api same-features clearfix " id="video-conferencing">
+         <div class="container clearfix">
+             <div class="features-data-moderation clearfix">
+               <div class="features-content">
+                  <h4 class="heading-features">Ensuring Quick Patient-doctor Access</h4>
+                  <p class="desp">Extend the reach of patient care by creating communities, groups that enable remote patients to get treatment over the web and mobile applications. </p>
+                  <div class="accordion active-acc accordion-data">
+                     <svg width="129.823" height="147.709" viewBox="0 0 129.823 147.709">
+                     <g id="Push_Notification" data-name="Push Notification" transform="translate(-16.113 -2.5)">
+                        <path id="Path_42" data-name="Path 42" d="M116.173,80.382V56.228c.115-18.415-12.268-30.629-22.908-35.493a53.989,53.989,0,0,0-9.383-3.266V15.928a13.428,13.428,0,1,0-26.856,0V17.7a53.175,53.175,0,0,0-8.449,3.056C36.82,26.179,24.907,39.241,24.8,56.212v24.17c0,17.155-6.059,31.875-18.007,43.751a2.686,2.686,0,0,0,1.437,4.552l25.489,4.4c4.748.819,9.12,1.49,13.28,2.044a26.55,26.55,0,0,0,47.892-.008c4.144-.551,8.494-1.219,13.216-2.036l25.486-4.4a2.686,2.686,0,0,0,1.437-4.552C122.519,111.7,116.173,96.976,116.173,80.382ZM62.4,15.928a8.057,8.057,0,1,1,16.113,0v.489a53.4,53.4,0,0,0-16.113.126Zm8.548,128.908a21.525,21.525,0,0,1-17.233-8.9,166.328,166.328,0,0,0,17.2.929,165.419,165.419,0,0,0,17.268-.937A21.532,21.532,0,0,1,70.945,144.836ZM107.2,127.79c-5.154.889-9.878,1.611-14.341,2.181h-.019c-1.969.25-3.881.467-5.753.655l-.046,0c-1.716.172-3.392.312-5.052.43-.312.021-.623.043-.932.062-1.437.094-2.857.169-4.27.223-.287.011-.577.027-.865.035-3.341.113-6.636.113-9.974,0-.3-.011-.6-.027-.9-.038-1.388-.056-2.788-.126-4.2-.22-.336-.021-.671-.043-1.01-.067-1.609-.115-3.236-.25-4.9-.416l-.183-.016c-1.858-.185-3.754-.4-5.7-.65h-.024c-4.48-.567-9.222-1.294-14.4-2.186l-20.572-3.55c10.7-12.23,16.113-26.958,16.113-43.855V56.228c.091-14.6,10.442-25.881,20.655-30.591a48.01,48.01,0,0,1,9.391-3.177c.027-.005.056,0,.083-.008a48.826,48.826,0,0,1,20.357-.183c.035.008.07-.008.1,0A48.571,48.571,0,0,1,91.034,25.62c9.907,4.531,19.863,15.74,19.769,30.594v24.17c0,16.2,5.841,31.268,16.954,43.858Z" transform="translate(10.113)"></path>
+                        <path id="Path_43" data-name="Path 43" d="M67.46,16.078a41.036,41.036,0,0,0-33.486.005C28.079,18.8,18.081,26.753,18,39.324a2.687,2.687,0,0,0,2.669,2.7h.016a2.685,2.685,0,0,0,2.686-2.669c.062-9.875,8.108-16.207,12.85-18.4a35.551,35.551,0,0,1,29,0,2.685,2.685,0,1,0,2.237-4.882Z" transform="translate(30.34 16.871)"></path>
+                     </g>
+                     </svg>
+
+                     <h4>Push Notification</h4>
+                     <p class="data-desc">Get notified on every conversation made within the app through real-time notification. Stay connected with medical experts anytime, anywhere and even when the application is not running.</p>
+                  </div>
+                  <div class="accordion accordion-data">
+                     <svg viewBox="0 0 436 495" width="436" height="495">
+                        <style>
+                           tspan { white-space:pre }
+                        </style>
+                     <path class="shp0" d="M196.89 476.45L196.89 250C187.06 243.46 180.51 232.15 180.51 219.35C180.51 199.12 196.89 182.75 217.14 182.75C237.39 182.75 253.77 199.12 253.77 219.35C253.77 234.23 244.83 247.03 232.33 252.68L232.33 476.45C232.33 486.28 224.29 494.31 214.46 494.31C204.63 494.31 196.89 486.28 196.89 476.45ZM306.18 291.67C309.16 293.45 312.13 294.34 315.41 294.34C321.37 294.34 327.32 291.36 330.6 285.71C344 263.7 350.55 238.41 349.36 212.51C346.38 140.5 285.33 84.25 212.97 86.93C178.42 88.42 146.26 103.31 122.44 129.19C98.61 154.78 86.4 188.4 87.89 223.22C88.79 243.76 94.15 263.4 103.97 281.25C108.74 289.87 119.76 293.15 128.39 288.09C137.03 283.34 140.01 272.32 135.24 263.7C128.1 250.6 124.23 236.62 123.33 221.44C122.44 196.15 131.37 171.75 148.35 153C165.32 134.25 189.44 123.83 214.75 122.65C267.17 120.56 311.83 161.33 313.92 214C314.81 232.75 310.05 251.2 300.22 267.26C295.16 275.59 297.84 286.6 306.18 291.67ZM358.59 360.4C366.04 366.65 377.35 365.76 383.9 358.32C416.96 319.04 435.12 269.35 435.12 217.87C435.12 97.95 337.75 0.64 217.73 0.64C97.72 0.64 0.34 97.95 0.34 217.87C0.34 272.32 20.59 324.1 57.22 364.27C60.79 368.14 65.56 370.22 70.32 370.22C74.49 370.22 78.96 368.74 82.24 365.46C89.38 358.92 89.98 347.61 83.43 340.17C53.05 306.84 36.08 263.4 36.08 217.87C36.08 117.89 117.67 36.35 217.73 36.35C317.79 36.35 399.39 117.88 399.39 217.87C399.39 260.72 384.2 302.38 356.51 335.11C349.95 342.55 350.85 353.86 358.59 360.4Z"></path>
+                  </svg>
+
+                     <h4>Broadcast</h4>
+                     <p class="data-desc accordion-desc">Create broadcasting messages to reach health tips a maximum number of patients or to create one-to-many communication just at a push of a button.</p>
+                  </div>
+                  <div class="accordion accordion-data">
+                     <svg id="chat_tag" data-name="chat tag" width="159.146" height="159.146" viewBox="0 0 159.146 159.146">
+                     <path id="Path_45" data-name="Path 45" d="M31.5,159.146a4.985,4.985,0,0,1-4.973-4.973V125.99H18.235A18.251,18.251,0,0,1,0,107.755V18.235A18.251,18.251,0,0,1,18.235,0H140.91a18.251,18.251,0,0,1,18.235,18.235v89.519A18.251,18.251,0,0,1,140.91,125.99H65.13L35.1,157.6a5,5,0,0,1-3.607,1.545ZM18.235,9.947a8.3,8.3,0,0,0-8.289,8.289v89.519a8.3,8.3,0,0,0,8.289,8.289H31.5a4.975,4.975,0,0,1,4.973,4.973v20.7L59.388,117.6A4.956,4.956,0,0,1,63,116.044H140.91a8.3,8.3,0,0,0,8.289-8.289V18.235a8.3,8.3,0,0,0-8.289-8.289Z"></path>
+                     <path id="Path_46" data-name="Path 46" d="M31.709,52.417A23.209,23.209,0,1,1,54.917,29.209,23.234,23.234,0,0,1,31.709,52.417Zm0-36.471A13.262,13.262,0,1,0,44.971,29.209,13.275,13.275,0,0,0,31.709,15.947Z" transform="translate(47.864 33.786)"></path>
+                     <path id="Path_47" data-name="Path 47" d="M48.594,89.188A42.951,42.951,0,0,1,15.134,73.26,43.1,43.1,0,0,1,75.768,12.632,42.928,42.928,0,0,1,91.7,46.086v8.289a14.92,14.92,0,1,1-29.84,0V27.851a4.973,4.973,0,1,1,9.947,0V54.375a4.973,4.973,0,0,0,9.947,0V46.086A33.059,33.059,0,0,0,69.5,20.344,33.468,33.468,0,0,0,41.406,13.68,32.945,32.945,0,0,0,16.195,38.9a33.473,33.473,0,0,0,6.664,28.089A33.046,33.046,0,0,0,48.594,79.241a4.973,4.973,0,1,1,0,9.947Z" transform="translate(30.979 16.909)"></path>
+                     </svg>
+                     <h4>Chat Tagging</h4>
+                     <p class="data-desc accordion-desc">With Chat tags, prioritize particular chat conversation to categorize a specific topic to any medical expert or patient. Adding tags to chat organizes the entire conversation.</p>
+                  </div>
+                  <div class="accordion accordion-data">
+                  <svg id="Patient_centric_panel" data-name="Patient centric panel" width="144.905" height="144.905" viewBox="0 0 144.905 144.905">
+                  <path id="Path_48" data-name="Path 48" d="M144.9,0H0V107.51H9.349v8.84l6.394,1.591a32.458,32.458,0,0,0,1.7,4.123l-3.388,5.64,12.5,12.5,5.638-3.391a32.449,32.449,0,0,0,4.123,1.7l1.594,6.4H55.58l1.6-6.4a32.727,32.727,0,0,0,4.123-1.7l5.638,3.391,12.5-12.5-3.388-5.64a33.14,33.14,0,0,0,1.7-4.123l6.392-1.591v-8.84H144.9ZM140.23,4.674V18.7H4.674V4.674ZM79.464,112.693l-5.43,1.353-.373,1.291a28.03,28.03,0,0,1-2.339,5.679l-.648,1.179,2.872,4.784-7.331,7.333-4.786-2.877-1.179.65a27.817,27.817,0,0,1-5.679,2.337l-1.291.375-1.35,5.432H41.557L40.2,134.8l-1.291-.375a28,28,0,0,1-5.679-2.337l-1.179-.65-4.786,2.878-7.332-7.334L22.81,122.2l-.647-1.179a28.03,28.03,0,0,1-2.339-5.679l-.374-1.291-5.426-1.356v-10.37l5.43-1.352.373-1.291A28.03,28.03,0,0,1,22.165,94l.648-1.179-2.872-4.784L27.272,80.7l4.786,2.878,1.179-.65a27.818,27.818,0,0,1,5.679-2.337l1.291-.375,1.35-5.43H51.93l1.352,5.43,1.291.375a28,28,0,0,1,5.679,2.337l1.179.65L66.217,80.7l7.332,7.334-2.872,4.784L71.324,94a28.03,28.03,0,0,1,2.339,5.679l.374,1.291,5.426,1.356Zm4.674-9.858V98.67l-6.394-1.591a32.46,32.46,0,0,0-1.7-4.123l3.388-5.64-12.5-12.5L61.3,78.209a32.448,32.448,0,0,0-4.123-1.7l-1.594-6.4H37.907l-1.6,6.4a32.726,32.726,0,0,0-4.123,1.7L26.55,74.818l-12.5,12.5,3.388,5.64a33.138,33.138,0,0,0-1.7,4.123L9.349,98.67v4.165H4.674V23.372H140.23v79.464Zm0,0"></path>
+                  <path id="Path_49" data-name="Path 49" d="M32,32h4.674v4.674H32Zm0,0" transform="translate(-22.651 -22.651)"></path>
+                  <path id="Path_50" data-name="Path 50" d="M64,32h4.674v4.674H64Zm0,0" transform="translate(-45.303 -22.651)"></path>
+                  <path id="Path_51" data-name="Path 51" d="M96,32h4.674v4.674H96Zm0,0" transform="translate(-67.954 -22.651)"></path>
+                  <path id="Path_52" data-name="Path 52" d="M103.372,288a23.372,23.372,0,1,0,23.372,23.372A23.4,23.4,0,0,0,103.372,288Zm0,42.069a18.7,18.7,0,1,1,18.7-18.7A18.719,18.719,0,0,1,103.372,330.069Zm0,0" transform="translate(-56.628 -203.862)"></path>
+                  <path id="Path_53" data-name="Path 53" d="M126.023,320a14.023,14.023,0,1,0,14.023,14.023A14.037,14.037,0,0,0,126.023,320Zm0,23.372a9.349,9.349,0,1,1,9.349-9.349A9.358,9.358,0,0,1,126.023,343.372Zm0,0" transform="translate(-79.28 -226.513)"></path>
+                  <path id="Path_57" data-name="Path 57" d="M297.349,214h-4.674v21.686H288v4.674h4.674v44.674h4.674V240.36h4.674v-4.674h-4.674Zm0,0" transform="translate(-203.862 -186.873)"></path>
+                  <path id="Path_122" data-name="Path 122" d="M297.349,214h-4.674v41.686H288v4.674h4.674v24.674h4.674V260.36h4.674v-4.674h-4.674Zm0,0" transform="translate(-185.862 -186.873)"></path>
+                  <path id="Path_123" data-name="Path 123" d="M297.349,214h-4.674v7.686H288v4.674h4.674v58.674h4.674V226.36h4.674v-4.674h-4.674Zm0,0" transform="translate(-167.862 -186.873)"></path>
+                  </svg>
+
+                     <h4>Patient-centric Panel</h4>
+                     <p class="data-desc accordion-desc">Categorize every health problem-centric conversation into a specific group within the healthcare chat app through the panel which is authorized only by admin.</p>
+                  </div>
+                  <a href="https://www.mirrorfly.com/chat-features.php" class="button-link wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Explore More
+                     <i><svg viewBox="0 0 16 16" width="100%" height="100%"><path d="M2 6.8h9.6L9.29 4.028A1.26 1.26 0 0 1 9 3.2c0-.59.407-1.2 1-1.2.266 0 .497.116.69.348l3.979 4.775c.164.197.331.44.331.877s-.14.648-.323.868l-3.987 4.784c-.193.232-.425.348-.69.348-.594 0-1-.61-1-1.2 0-.31.093-.592.29-.828L11.6 9.2H2c-.552 0-1-.538-1-1.2 0-.662.448-1.2 1-1.2z"></path></svg></i>
+                  </a>
+               </div>
+               <div class="features-img wow fadeInRight" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                  <img src="./h_m/personal.png" class="lazy-communication" alt="create video chat app android">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="features-api same-features clearfix" id="broadcasting-sdk">
+         <div class="container clearfix">
+            <div class="features-communication clearfix">
+               <div class="features-img wow fadeInLeft" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                  <img src="./h_m/tracking.png" class="lazy-communication tracking" alt="create voice chat app">
+               </div>
+               <div class="features-content">
+                  <h4 class="heading-features">Consistent Tracking of Patients Report</h4>
+                  <p class="desp">Modernize the traditional interaction and put patients ahead with instant updates. Send automated reminders and follow-up notifications to keep track of the patient’s treatment. 
+</p><p>
+                  </p><div class="accordion active-acc accordion-media-handling">
+                     <svg id="Track_Patients_Globally" data-name="Track Patients Globally" width="193.453" height="193.453" viewBox="0 0 193.453 193.453">
+                     <path id="Path_58" data-name="Path 58" d="M170.783,42.318a22.665,22.665,0,0,0-22.67,22.67v7.557H120.79C129.9,56.974,134.51,45.3,134.51,37.784a37.784,37.784,0,0,0-75.568,0c0,7.512,4.615,19.192,13.72,34.761H45.341V64.988A22.67,22.67,0,0,0,0,64.988V86.147a3.778,3.778,0,1,0,7.557,0V64.988a15.114,15.114,0,0,1,30.227,0V153.9a22.622,22.622,0,0,0-30.227,0v-37.53a3.778,3.778,0,1,0-7.557,0v54.409c0,12.963,11.19,22.67,23.748,22.67H170.783a22.7,22.7,0,0,0,22.67-22.67V64.988a22.7,22.7,0,0,0-22.67-22.67Zm-15.114,22.67a15.114,15.114,0,0,1,30.227,0V153.8a22.082,22.082,0,0,0-9.136-4.913,22.8,22.8,0,0,0-21.091,5V64.988Zm-7.557,52.9H99.749C87.087,105.829,62.9,82.8,60.078,80.1H77.243C85.492,93.279,93.617,104.167,93.7,104.28a3.78,3.78,0,0,0,6.051,0c.084-.114,8.211-11,16.458-24.179h31.9ZM96.726,7.557a30.261,30.261,0,0,1,30.227,30.227c0,14.029-22.13,46.47-30.227,57.8C88.5,84.073,66.5,51.684,66.5,37.784A30.261,30.261,0,0,1,96.726,7.557ZM7.557,170.783a15.114,15.114,0,0,1,30.227,0,3.778,3.778,0,1,0,7.557,0V107.809l38.351,36.525L40.051,185.9h-16.3C15.274,185.9,7.557,179.563,7.557,170.783ZM91.775,147.07a3.777,3.777,0,0,0,0-5.473L45.341,97.374V80.1h3.778c.258.246,44.713,42.585,46.514,44.3a3.779,3.779,0,0,0,2.605,1.042h49.875v15.114H119.4a3.778,3.778,0,0,0-2.671,1.107L72.49,185.9H51.008ZM170.783,185.9h-87.6l37.784-37.784h27.15v22.67a3.778,3.778,0,1,0,7.557,0,15.151,15.151,0,0,1,19.2-14.584A14.88,14.88,0,0,1,185.9,170.783,15.131,15.131,0,0,1,170.783,185.9Zm0,0"></path>
+                     <path id="Path_59" data-name="Path 59" d="M224.892,87.784A18.892,18.892,0,1,0,206,68.892,18.913,18.913,0,0,0,224.892,87.784Zm0-30.227a11.335,11.335,0,1,1-11.335,11.335A11.348,11.348,0,0,1,224.892,57.557Zm0,0" transform="translate(-128.165 -31.108)"></path>
+                     <path id="Path_60" data-name="Path 60" d="M3.778,265.557A3.778,3.778,0,1,0,0,261.778,3.78,3.78,0,0,0,3.778,265.557Zm0,0" transform="translate(0 -160.518)"></path>
+                     </svg>
+                     <h4>Track Patients Globally </h4>
+                     <p class="media-handling-desc">Leverage the tracking of patient’s information within the chat app. The chat between doctor &amp; patient are logged for future references and to initiate the treatment further.</p>
+                  </div>
+                  <div class="accordion accordion-media-handling">
+                     <svg width="194.903" height="129.936" viewBox="0 0 194.903 129.936">
+                     <g id="Remote_Diagnosis" data-name="Remote Diagnosis" transform="translate(-24)">
+                        <path id="Path_61" data-name="Path 61" d="M27.609,129.936H215.294a3.608,3.608,0,0,0,3.609-3.609V3.609A3.608,3.608,0,0,0,215.294,0H27.609A3.609,3.609,0,0,0,24,3.609V126.326A3.61,3.61,0,0,0,27.609,129.936Zm79.405-72.186h7.219a3.645,3.645,0,0,0,1.142-.183l8.713-2.906,2.032,2.032a3.606,3.606,0,0,0,2.55,1.057h7.219v7.219A10.827,10.827,0,0,1,125.061,75.8h-7.219a10.828,10.828,0,0,1-10.828-10.828Zm0-7.219A10.828,10.828,0,0,1,117.842,39.7h7.219a10.827,10.827,0,0,1,10.828,10.828h-5.724l-2.552-2.552a3.61,3.61,0,0,0-3.692-.872L113.65,50.531Zm10.828,32.484h7.219v7.219h-7.219Zm-3.609,14.437h20.13l-3.888,10.828H112.428l-3.893-10.828Zm-13.274.248,5.548,15.412a3.606,3.606,0,0,0,3.4,2.386H133a3.606,3.606,0,0,0,3.4-2.386L141.946,97.7a18.01,18.01,0,0,1,15.6,17.8v7.219H85.358V115.5a18.013,18.013,0,0,1,15.6-17.8ZM31.219,7.219H211.685v115.5H164.764V115.5A25.294,25.294,0,0,0,139.5,90.233H132.28V81.485a18.044,18.044,0,0,0,10.828-16.517V50.53a18.068,18.068,0,0,0-18.047-18.047h-7.219A18.07,18.07,0,0,0,99.8,50.53V64.968a18.05,18.05,0,0,0,10.828,16.517v8.748h-7.219A25.3,25.3,0,0,0,78.14,115.5v7.219H31.219Zm0,0"></path>
+                        <path id="Path_63" data-name="Path 63" d="M101.064,82.014a3.609,3.609,0,0,0,5.359-3.969l-3.5-14.006V35.609A3.608,3.608,0,0,0,99.312,32H59.61A3.609,3.609,0,0,0,56,35.609V71.7a3.61,3.61,0,0,0,3.609,3.609H89.9Zm-37.845-42.8H95.7V64.483a3.684,3.684,0,0,0,.109.878l1.494,5.976-4.545-2.728a3.612,3.612,0,0,0-1.858-.516H63.219Zm0,0" transform="translate(-17.563 -17.562)"></path>
+                        <path id="Path_64" data-name="Path 64" d="M315.611,122.53a3.58,3.58,0,0,0,1.859-.516l11.161-6.7h30.292a3.608,3.608,0,0,0,3.609-3.609V75.609A3.608,3.608,0,0,0,358.923,72h-39.7a3.609,3.609,0,0,0-3.609,3.609v28.43l-3.5,14.006a3.609,3.609,0,0,0,3.5,4.485Zm7.111-17.169a3.593,3.593,0,0,0,.108-.878V79.219h32.484v28.875H327.63a3.612,3.612,0,0,0-1.858.516l-4.545,2.728Zm0,0" transform="translate(-158.066 -39.516)"></path>
+                     </g>
+                     </svg>
+                     <h4>Remote Diagnosis</h4>
+                     <p class="media-handling-desc accordion-desc">With real-time sharing of patient’s health concerns, doctors or medical experts are able to diagnose the patient’s problem through voice/video chat without any in-person actions.</p>
+                  </div>
+                  <div class="accordion accordion-media-handling">
+                     <svg width="143.918" height="187.682" viewBox="0 0 143.918 187.682">
+                     <g id="Post-diagnostic" transform="translate(-59.694)">
+                        <g data-name="Group 22" transform="translate(123.106 9.516)">
+                           <g data-name="Group 21">
+                           <path id="Path_65" data-name="Path 65" d="M241.23,25.961a8.547,8.547,0,1,0,8.547,8.547A8.557,8.557,0,0,0,241.23,25.961Zm0,11.6a3.049,3.049,0,1,1,3.049-3.049A3.052,3.052,0,0,1,241.23,37.557Z" transform="translate(-232.683 -25.961)"></path>
+                           </g>
+                        </g>
+                        <g data-name="Group 24" transform="translate(103.558 30.031)">
+                           <g data-name="Group 23">
+                           <path id="Path_66" data-name="Path 66" d="M182.106,81.926a2.749,2.749,0,0,0-2.749,2.749v4.587a2.749,2.749,0,0,0,5.5,0V84.675A2.749,2.749,0,0,0,182.106,81.926Z" transform="translate(-179.357 -81.926)"></path>
+                           </g>
+                        </g>
+                        <g data-name="Group 26" transform="translate(154.249 30.031)">
+                           <g data-name="Group 25">
+                           <path id="Path_67" data-name="Path 67" d="M320.392,81.926a2.749,2.749,0,0,0-2.749,2.749v4.587a2.749,2.749,0,0,0,5.5,0V84.675A2.749,2.749,0,0,0,320.392,81.926Z" transform="translate(-317.643 -81.926)"></path>
+                           </g>
+                        </g>
+                        <g data-name="Group 30" transform="translate(98.599 110.511)">
+                           <g data-name="Group 29" transform="translate(0)">
+                           <path id="Path_69" data-name="Path 69" d="M229.187,301.476H168.578a2.749,2.749,0,1,0,0,5.5h60.609a2.749,2.749,0,1,0,0-5.5Z" transform="translate(-165.829 -301.476)"></path>
+                           </g>
+                        </g>
+                        <g data-name="Group 32" transform="translate(98.599 127.106)">
+                           <g data-name="Group 31" transform="translate(0)">
+                           <path id="Path_70" data-name="Path 70" d="M229.187,346.748H168.578a2.749,2.749,0,1,0,0,5.5h60.609a2.749,2.749,0,1,0,0-5.5Z" transform="translate(-165.829 -346.748)"></path>
+                           </g>
+                        </g>
+                        <g data-name="Group 34" transform="translate(98.599 143.702)">
+                           <g data-name="Group 33" transform="translate(0)">
+                           <path data-name="Path 71" d="M229.187,392.021H168.578a2.749,2.749,0,1,0,0,5.5h60.609a2.749,2.749,0,0,0,0-5.5Z" transform="translate(-165.829 -392.021)"></path>
+                           </g>
+                        </g>
+                        <g data-name="Group 36" transform="translate(113.354 64.212)">
+                           <g data-name="Group 35">
+                           <path data-name="Path 72" d="M239.928,184.924h-7v-7a2.749,2.749,0,0,0-2.749-2.749h-11.6a2.749,2.749,0,0,0-2.749,2.749v7h-7a2.749,2.749,0,0,0-2.749,2.749v11.6a2.749,2.749,0,0,0,2.749,2.749h7v7a2.749,2.749,0,0,0,2.749,2.749h11.6a2.749,2.749,0,0,0,2.749-2.749v-7h7a2.749,2.749,0,0,0,2.749-2.749v-11.6A2.749,2.749,0,0,0,239.928,184.924Zm-2.749,11.6h-7a2.749,2.749,0,0,0-2.749,2.749v7h-6.1v-7a2.749,2.749,0,0,0-2.749-2.749h-7v-6.1h7a2.749,2.749,0,0,0,2.749-2.749v-7h6.1v7a2.749,2.749,0,0,0,2.749,2.749h7Z" transform="translate(-206.079 -175.172)"></path>
+                           </g>
+                        </g>
+                        <g data-name="Group 38" transform="translate(59.694)">
+                           <g data-name="Group 37">
+                           <path data-name="Path 73" d="M187.636,28.857H175.891V24.536a8.28,8.28,0,0,0-8.27-8.27H150.47a19.017,19.017,0,0,0-37.635,0H95.686a8.28,8.28,0,0,0-8.27,8.27v4.321H75.67A15.994,15.994,0,0,0,59.694,44.833V171.706A15.994,15.994,0,0,0,75.67,187.682h13.2a2.749,2.749,0,0,0,0-5.5H75.67a10.489,10.489,0,0,1-10.478-10.477V44.833A10.489,10.489,0,0,1,75.67,34.356H87.416v7.128H75.67a3.353,3.353,0,0,0-3.349,3.349V171.706a3.353,3.353,0,0,0,3.349,3.349H187.636a3.353,3.353,0,0,0,3.349-3.349V44.833a3.353,3.353,0,0,0-3.349-3.349H175.891V34.356h11.745a10.489,10.489,0,0,1,10.478,10.477V171.706a10.489,10.489,0,0,1-10.478,10.477H99.867a2.749,2.749,0,1,0,0,5.5h87.769a15.994,15.994,0,0,0,15.976-15.976V44.833A15.994,15.994,0,0,0,187.636,28.857Zm-2.15,18.126V169.557H77.82V46.982h9.6v.588a8.28,8.28,0,0,0,8.27,8.27h53.3a2.749,2.749,0,0,0,0-5.5h-53.3a2.775,2.775,0,0,1-2.772-2.772V24.536a2.775,2.775,0,0,1,2.772-2.772h19.7a2.749,2.749,0,0,0,2.749-2.749,13.517,13.517,0,1,1,27.034,0,2.749,2.749,0,0,0,2.749,2.749h19.7a2.775,2.775,0,0,1,2.772,2.772V47.571a2.775,2.775,0,0,1-2.772,2.772H148.987a2.749,2.749,0,1,0,0,5.5h18.634a8.28,8.28,0,0,0,8.27-8.27v-.588Z" transform="translate(-59.694)"></path>
+                           </g>
+                        </g>
+                     </g>
+                     </svg>
+
+                     <h4>Post-diagnostic</h4>
+                     <p class="media-handling-desc accordion-desc">Assist patients in seeking better attention with medical experts to their symptoms &amp; schedule the time for initiating the diagnostic process through chat.</p>
+                  </div>
+                  <div class="accordion accordion-media-handling">
+                     <svg width="200.137" height="166.41" viewBox="0 0 200.137 166.41">
+                        <g id="Telemedicine" transform="translate(-0.001 -0.144)">
+                           <path data-name="Path 74" d="M101.277,45.977V37.443h.445a3.422,3.422,0,0,0,3.244-3.476V3.39A3.217,3.217,0,0,0,101.722.145H18.33A3.121,3.121,0,0,0,15.2,3.388V33.966a3.328,3.328,0,0,0,3.127,3.476h.562V45.99c0,.021-.115.04-.157.062-.16.08-.335.162-.493.243-.2.1-.413.208-.615.315-.16.086-.323.178-.484.267-.194.109-.389.216-.58.33-.162.094-.32.192-.479.288-.187.115-.373.229-.557.346-.157.1-.315.2-.471.309-.179.12-.357.24-.533.362l-.464.328c-.173.125-.346.251-.516.379-.152.114-.3.229-.455.346-.167.13-.333.263-.5.4-.149.12-.3.24-.442.362-.163.136-.323.275-.484.415-.142.125-.287.25-.427.376-.159.142-.312.288-.469.432-.138.13-.277.258-.413.391-.152.149-.3.3-.453.45-.133.134-.266.266-.4.4-.149.155-.295.314-.442.472-.125.136-.253.272-.376.41-.149.163-.291.333-.435.5-.118.136-.237.271-.352.41-.151.181-.3.365-.442.548-.1.131-.211.259-.312.391-.181.232-.355.469-.53.706-.1.136-.2.271-.3.407-.194.274-.387.549-.573.828-.09.133-.173.269-.261.4-.131.2-.264.405-.392.612-.093.151-.181.3-.272.455-.115.194-.232.386-.344.581-.091.16-.178.322-.267.484-.106.192-.211.383-.314.573-.086.167-.17.335-.255.5-.1.192-.2.384-.288.578-.082.171-.16.343-.24.514-.09.2-.179.391-.266.588-.077.173-.151.347-.224.524q-.122.3-.245.6c-.07.178-.139.355-.2.533-.077.2-.152.4-.224.605-.064.179-.126.359-.187.54-.07.2-.138.41-.2.615-.058.181-.114.363-.168.546-.062.208-.123.416-.181.626-.051.183-.1.365-.149.549C1,68.1.953,68.311.9,68.524c-.043.183-.088.365-.128.549-.048.218-.093.436-.138.656-.037.181-.074.363-.109.546-.04.224-.078.448-.115.674-.03.179-.061.359-.088.54-.034.231-.062.464-.093.7-.022.176-.046.351-.066.527-.027.245-.048.492-.07.736-.014.165-.032.328-.045.495-.021.275-.034.552-.046.828-.008.138.026.277.021.415-.016.415.019.833.019,1.249v71.681a18.432,18.432,0,0,0,18.392,18.44h83.2a18.531,18.531,0,0,0,18.5-18.449V76.439A34.166,34.166,0,0,0,114.461,57.5a32.719,32.719,0,0,0-13.183-11.52ZM21.761,6.7H98.408V30.885H21.761ZM113.573,148.1A11.97,11.97,0,0,1,101.62,160H18.443A11.868,11.868,0,0,1,6.6,148.105V76.438a27.591,27.591,0,0,1,5.16-16.1c.387-.54.773-1.065,1.2-1.574.213-.255.419-.6.64-.85a28.041,28.041,0,0,1,9.738-6.947h.029a2.969,2.969,0,0,0,2.088-2.847V37.443H94.719V48.124a3.268,3.268,0,0,0,2.064,3.05,27.168,27.168,0,0,1,16.791,25.265Zm0,0" transform="translate(0)"></path>
+                           <path data-name="Path 75" d="M127.769,190.508H107.685V170.424a3.279,3.279,0,0,0-3.279-3.279H84.322a3.279,3.279,0,0,0-3.279,3.279v20.084H61.369a3.279,3.279,0,0,0-3.279,3.279v18.854a3.279,3.279,0,0,0,3.279,3.279H81.043V236a3.279,3.279,0,0,0,3.279,3.279h20.084A3.279,3.279,0,0,0,107.685,236V215.92h20.084a3.279,3.279,0,0,0,3.279-3.279V193.787A3.279,3.279,0,0,0,127.769,190.508Zm-3.279,18.854H104.406a3.279,3.279,0,0,0-3.279,3.279v20.084H87.6V212.641a3.279,3.279,0,0,0-3.279-3.279H64.648v-12.3H84.322a3.279,3.279,0,0,0,3.279-3.279V173.7h13.526v20.084a3.279,3.279,0,0,0,3.279,3.279H124.49Zm0,0" transform="translate(-34.28 -98.551)"></path>
+                           <path data-name="Path 76" d="M364.984,254.417,326.48,240.3a17.432,17.432,0,0,0-12.3,32.62,17.416,17.416,0,0,0,1.973,34.723h41.012a17.408,17.408,0,0,0,15.281-25.8,17.419,17.419,0,0,0-7.459-27.431ZM369.2,274.53a10.883,10.883,0,0,1-1.081,2.158,17.347,17.347,0,0,0-10.951-3.884H339.9l6.657-18.161,16.174,5.93A10.889,10.889,0,0,1,369.2,274.53ZM310.61,261.244a10.877,10.877,0,0,1,13.612-14.786l16.174,5.93-5.748,15.678a3.278,3.278,0,0,0-1.952-4.2l-13.1-4.8a3.279,3.279,0,1,0-2.256,6.158l13.1,4.8a3.272,3.272,0,0,0,4.2-1.947L332.91,272.8H332.9l-16.161-5.924a10.8,10.8,0,0,1-6.124-5.636Zm-5.335,28.98a10.874,10.874,0,0,1,10.876-10.862H333.3v16.7a3.126,3.126,0,0,0-3.2-3.173h-13.95a3.279,3.279,0,1,0,0,6.558H330.1a3.293,3.293,0,0,0,3.2-3.365v5H316.151A10.877,10.877,0,0,1,305.275,290.224Zm51.888,10.862H339.857V279.362h17.306a10.862,10.862,0,1,1,0,21.723Zm0,0" transform="translate(-176.279 -141.089)"></path>
+                        </g>
+                     </svg>
+                     <h4>Telemedicine</h4>
+                     <p class="media-handling-desc accordion-desc">Enhances the remote diagnosis support to patients by using IP based Voice/Video calls. Helps medical experts to extend their reach to patients who aren’t in local.</p>
+                  </div>
+
+                  <a href="https://www.mirrorfly.com/chat-features.php" class="button-link wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Explore More
+                     <i><svg viewBox="0 0 16 16" width="100%" height="100%"><path d="M2 6.8h9.6L9.29 4.028A1.26 1.26 0 0 1 9 3.2c0-.59.407-1.2 1-1.2.266 0 .497.116.69.348l3.979 4.775c.164.197.331.44.331.877s-.14.648-.323.868l-3.987 4.784c-.193.232-.425.348-.69.348-.594 0-1-.61-1-1.2 0-.31.093-.592.29-.828L11.6 9.2H2c-.552 0-1-.538-1-1.2 0-.662.448-1.2 1-1.2z"></path></svg></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="features-api same-features clearfix " id="hipaa-Compliance">
+         <div class="container clearfix">
+            <div class="heading">
+               <h3 class="wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">Infrastructure That Speaks About Our Security Trust</h3>
+               <p class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">MirrorFly’s security infrastructure as code ensures no stone goes unturned into your healthcare data</p>
+            </div>
+            <div class="features-communication">
+               <div class="connect-device-content features-content ">
+                  <div class="first-set">
+                     <div class="connect-device-solutions">
+                        <div class="connect-device-security-content">
+                        <svg width="176.61" height="207.093" viewBox="0 0 176.61 207.093">
+                           <g id="HIPAA_Compliance" data-name="HIPAA Compliance" transform="translate(-37.681 0)">
+                              <g id="Group_40" data-name="Group 40" transform="translate(37.681 0)">
+                                 <g id="Group_39" data-name="Group 39" transform="translate(0)">
+                                 <path data-name="Path 95" d="M211.086,35.76A344.487,344.487,0,0,1,128.2.6a4.354,4.354,0,0,0-4.429,0A335.053,335.053,0,0,1,40.886,35.76a4.356,4.356,0,0,0-3.205,4.2V84.473c0,45.837,21.146,76.177,38.885,93.558,19.1,18.713,41.344,29.062,49.421,29.062s30.322-10.349,49.42-29.062c17.739-17.38,38.884-47.721,38.884-93.558V39.961A4.355,4.355,0,0,0,211.086,35.76Zm-5.507,48.712c0,42.811-19.723,71.123-36.269,87.335-18.78,18.4-38.86,26.572-43.322,26.572s-24.543-8.17-43.324-26.572c-16.546-16.213-36.27-44.524-36.27-87.335v-41.2A343.081,343.081,0,0,0,125.988,9.4a353.939,353.939,0,0,0,79.591,33.863Z" transform="translate(-37.681 0)"></path>
+                                 <path data-name="Path 96" d="M112.771,101.7a4.356,4.356,0,0,0-5.65-2.456c-7.782,3.066-15.77,5.889-23.741,8.389a4.357,4.357,0,0,0-3.053,4.156v16.823a4.356,4.356,0,1,0,8.712,0V114.977c7.151-2.314,14.294-4.873,21.275-7.624A4.355,4.355,0,0,0,112.771,101.7Z" transform="translate(-63.078 -58.923)"></path>
+                                 <path data-name="Path 98" d="M336.09,346.238a4.357,4.357,0,0,0-6.03,1.264,106.027,106.027,0,0,1-12.519,15.637,111.268,111.268,0,0,1-12.5,11.117,4.356,4.356,0,1,0,5.283,6.928,120.071,120.071,0,0,0,13.476-11.99,114.631,114.631,0,0,0,13.55-16.927A4.356,4.356,0,0,0,336.09,346.238Z" transform="translate(-195.881 -205.77)"></path>
+                                 <path data-name="Path 100" d="M147,186.723a14.166,14.166,0,0,0-20.033,20.034l25.723,25.722a14.169,14.169,0,0,0,20.033,0l53.7-53.7a14.166,14.166,0,0,0-20.035-20.033L162.7,202.428Zm65.549-21.815a5.453,5.453,0,1,1,7.712,7.712l-53.7,53.7a5.457,5.457,0,0,1-7.713,0L133.124,200.6a5.453,5.453,0,0,1,7.712-7.713l18.786,18.786a4.356,4.356,0,0,0,6.16,0Z" transform="translate(-88.384 -92.067)"></path>
+                                 </g>
+                              </g>
+                           </g>
+                           </svg>
+                           <h4>HIPAA Compatibility</h4>
+                           <p>We support HIPAA compatibility to ensure the entire patient’s sensitive data is protected against data exposure and privacy configuration with end-to-end encryption. </p>
+                           </div>
+                     </div>
+                     <div class="connect-device-solutions">
+                        <div class="connect-device-security-content">
+                     <svg width="193.305" height="207.093" viewBox="0 0 193.305 207.093">
+                        <g id="Personal_Health_Information" data-name="Personal Health Information" transform="translate(-0.004)">
+                           <path data-name="Path 77" d="M138.358,68.652h3.452V72.1a10.354,10.354,0,0,0,20.709,0V68.652h3.451a10.354,10.354,0,1,0,0-20.709h-3.451V44.49a10.354,10.354,0,0,0-20.709,0v3.452h-3.452a10.354,10.354,0,0,0,0,20.709Zm0-13.806h6.9a3.452,3.452,0,0,0,3.452-3.452v-6.9a3.451,3.451,0,0,1,6.9,0v6.9a3.451,3.451,0,0,0,3.451,3.452h6.9a3.451,3.451,0,1,1,0,6.9h-6.9a3.451,3.451,0,0,0-3.451,3.451v6.9a3.451,3.451,0,0,1-6.9,0V65.2a3.451,3.451,0,0,0-3.452-3.451h-6.9a3.451,3.451,0,0,1,0-6.9Zm0,0" transform="translate(-76.227 -20.329)"></path>
+                           <path data-name="Path 78" d="M134.612,27.613H112.434a37.926,37.926,0,0,0-72.993,0H17.261A17.277,17.277,0,0,0,0,44.87V189.834a17.279,17.279,0,0,0,17.257,17.258H134.612a17.28,17.28,0,0,0,17.258-17.258V44.87a17.277,17.277,0,0,0-17.258-17.257ZM75.936,75.934a38.013,38.013,0,0,0,36.5-27.612h18.728v138.06H20.713V48.322H39.441a38.01,38.01,0,0,0,36.5,27.612Zm0-69.029A31.063,31.063,0,1,1,44.873,37.967,31.063,31.063,0,0,1,75.936,6.9Zm69.031,182.93a10.354,10.354,0,0,1-10.355,10.354H17.261A10.354,10.354,0,0,1,6.907,189.835V44.87A10.354,10.354,0,0,1,17.261,34.517H38.146c-.1,1.139-.177,2.285-.177,3.451s.073,2.313.177,3.452H20.713a6.9,6.9,0,0,0-6.9,6.9v138.06a6.9,6.9,0,0,0,6.9,6.9H131.161a6.9,6.9,0,0,0,6.9-6.9V48.322a6.9,6.9,0,0,0-6.9-6.9H113.728c.1-1.139.175-2.285.175-3.452s-.073-2.312-.175-3.451h20.884A10.354,10.354,0,0,1,144.967,44.87Zm0,0"></path>
+                           <path data-name="Path 79" d="M75.172,232.414a3.451,3.451,0,0,0,0-6.9V211.7H92.431a3.451,3.451,0,0,0,0-6.9H75.172a6.9,6.9,0,0,0-6.9,6.9v13.807a6.9,6.9,0,0,0,6.9,6.9Zm0,0" transform="translate(-40.654 -121.964)"></path>
+                           <path data-name="Path 80" d="M108.357,224.765a3.451,3.451,0,0,0-4.881,4.879l6.9,6.9a3.454,3.454,0,0,0,4.881,0l17.258-17.258a3.452,3.452,0,0,0-4.881-4.881L112.82,229.227Zm0,0" transform="translate(-61.043 -127.11)"></path>
+                           <path data-name="Path 82" d="M208.253,220.239h17.258a3.451,3.451,0,0,0,0-6.9H208.253a3.451,3.451,0,1,0,0,6.9Zm0,0" transform="translate(-121.962 -127.047)"></path>
+                           <path data-name="Path 83" d="M208.253,254.372h27.612a3.451,3.451,0,1,0,0-6.9H208.253a3.451,3.451,0,1,0,0,6.9Zm0,0" transform="translate(-121.962 -147.374)"></path>
+                           <path data-name="Path 84" d="M75.172,317.748a3.451,3.451,0,0,0,0-6.9V297.039H92.431a3.451,3.451,0,0,0,0-6.9H75.172a6.9,6.9,0,0,0-6.9,6.9v13.806a6.9,6.9,0,0,0,6.9,6.9Zm0,0" transform="translate(-40.654 -172.784)"></path>
+                           <path data-name="Path 85" d="M127.637,299.741,112.82,314.558l-4.463-4.462a3.452,3.452,0,0,0-4.881,4.881l6.9,6.9a3.451,3.451,0,0,0,4.881,0l17.258-17.258a3.452,3.452,0,0,0-4.881-4.881Zm0,0" transform="translate(-61.043 -177.927)"></path>
+                           <path data-name="Path 87" d="M208.253,305.571h17.258a3.451,3.451,0,0,0,0-6.9H208.253a3.451,3.451,0,1,0,0,6.9Zm0,0" transform="translate(-121.962 -177.864)"></path>
+                           <path data-name="Path 88" d="M208.253,339.7h27.612a3.451,3.451,0,1,0,0-6.9H208.253a3.451,3.451,0,1,0,0,6.9Zm0,0" transform="translate(-121.962 -198.191)"></path>
+                           <path data-name="Path 89" d="M75.172,403.08a3.451,3.451,0,0,0,0-6.9V382.371H92.431a3.451,3.451,0,0,0,0-6.9H75.172a6.9,6.9,0,0,0-6.9,6.9v13.806a6.9,6.9,0,0,0,6.9,6.9Zm0,0" transform="translate(-40.654 -223.601)"></path>
+                           <path data-name="Path 90" d="M127.637,385.077,112.82,399.894l-4.463-4.463a3.452,3.452,0,0,0-4.881,4.881l6.9,6.9a3.451,3.451,0,0,0,4.881,0l17.258-17.257a3.452,3.452,0,0,0-4.881-4.881Zm0,0" transform="translate(-61.043 -228.746)"></path>
+                           <path data-name="Path 92" d="M208.253,390.907h17.258a3.451,3.451,0,0,0,0-6.9H208.253a3.451,3.451,0,1,0,0,6.9Zm0,0" transform="translate(-121.962 -228.684)"></path>
+                           <path data-name="Path 93" d="M208.253,425.04h27.612a3.451,3.451,0,1,0,0-6.9H208.253a3.451,3.451,0,1,0,0,6.9Zm0,0" transform="translate(-121.962 -249.011)"></path>
+                           <path data-name="Path 94" d="M418.047,110.934H401.479a9.752,9.752,0,0,0-8.974,10.355v113.9a3.4,3.4,0,0,0,.193,1.131l11.242,32.349a6.02,6.02,0,0,0,11.632.041l11.256-32.393a3.386,3.386,0,0,0,.193-1.128v-113.9a9.75,9.75,0,0,0-8.973-10.355Zm-2.013,135.414a24.893,24.893,0,0,0-12.547,0l-2.678-7.707h17.906Zm-16.626-93.995V142h20.709v10.355Zm13.806,79.385v-44.87a3.451,3.451,0,0,0-6.9,0v44.87h-6.9V159.256h20.709v72.481Zm-11.734-113.9h16.568c.98,0,2.07,1.477,2.07,3.451v13.806H399.408V121.289C399.408,119.316,400.5,117.838,401.479,117.838Zm8.284,146.554-4-11.521a19.172,19.172,0,0,1,8.01,0Zm0,0" transform="translate(-233.732 -66.064)"></path>
+                        </g>
+                     </svg>
+                           <h4>Personal Health Information</h4>
+                           <p>MirrorFly’s healthcare communication software is designed with multi-layers of security &amp; protection over distributions where your PHI is secure. 
+
+</p>
+                           </div>
+                     </div>
+                  </div>
+                  <div class="second-set">
+                     <div class="connect-device-solutions">
+                           <div class="connect-device-security-content">
+                     <svg width="177.485" height="177.805" viewBox="0 0 177.485 177.805">
+                        <g id="Distributed_Infrastructure" data-name="Distributed Infrastructure" transform="translate(-0.43 0.001)">
+                           <path data-name="Path 101" d="M418.178,208.43a11.834,11.834,0,0,0-11.412,8.874H400.43v5.916h6.336a11.812,11.812,0,1,0,11.412-14.79Zm0,17.749a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,418.178,226.178Zm0,0" transform="translate(-252.096 -131.361)"></path>
+                           <path data-name="Path 102" d="M164.264,23.823a11.689,11.689,0,0,0,5.029-1.168l5.656,6.79a11.725,11.725,0,0,0,7.063,17.624V53.4h5.916V47.069a11.727,11.727,0,0,0,7.064-17.624l5.656-6.79a11.688,11.688,0,0,0,5.028,1.168,11.912,11.912,0,1,0-9.586-4.951l-5.4,6.487a11.405,11.405,0,0,0-11.429,0l-5.4-6.487a11.805,11.805,0,1,0-9.588,4.951ZM205.677,6.075a5.916,5.916,0,1,1-5.916,5.916A5.916,5.916,0,0,1,205.677,6.075ZM184.97,29.739a5.916,5.916,0,1,1-5.916,5.916A5.916,5.916,0,0,1,184.97,29.739ZM164.264,6.075a5.916,5.916,0,1,1-5.916,5.916A5.916,5.916,0,0,1,164.264,6.075Zm0,0" transform="translate(-95.798)"></path>
+                           <path data-name="Path 103" d="M306.773,110.877l4.183,4.183L323.6,102.417a11.677,11.677,0,0,0,5.972,1.677,11.832,11.832,0,1,0-11.832-11.832,11.685,11.685,0,0,0,1.678,5.972Zm22.8-24.531a5.916,5.916,0,1,1-5.916,5.916,5.916,5.916,0,0,1,5.916-5.916Zm0,0" transform="translate(-193.07 -50.69)"></path>
+                           <path data-name="Path 104" d="M394.773,68.869l3.465-3.466,4.183,4.183-3.465,3.466Zm0,0" transform="translate(-248.531 -41.22)"></path>
+                           <path data-name="Path 105" d="M419.646,24.453l2.035-2.035a11.677,11.677,0,0,0,5.972,1.677,11.832,11.832,0,1,0-11.832-11.832,11.685,11.685,0,0,0,1.678,5.972l-2.035,2.035Zm8.008-18.107a5.916,5.916,0,1,1-5.916,5.916A5.916,5.916,0,0,1,427.654,6.346Zm0,0" transform="translate(-261.571 -0.271)"></path>
+                           <path data-name="Path 106" d="M92.262,104.095a11.669,11.669,0,0,0,5.972-1.677l12.643,12.643,4.183-4.183L102.418,98.235a11.669,11.669,0,0,0,1.677-5.972,11.832,11.832,0,1,0-11.832,11.832Zm0-17.748a5.916,5.916,0,1,1-5.916,5.916A5.916,5.916,0,0,1,92.262,86.346Zm0,0" transform="translate(-50.419 -50.691)"></path>
+                           <path data-name="Path 107" d="M12.262,24.094a11.669,11.669,0,0,0,5.972-1.677l2.035,2.035,4.183-4.183-2.035-2.035a11.669,11.669,0,0,0,1.677-5.972A11.832,11.832,0,1,0,12.262,24.094Zm0-17.748a5.916,5.916,0,1,1-5.916,5.916A5.916,5.916,0,0,1,12.262,6.346Zm0,0" transform="translate(0 -0.271)"></path>
+                           <path data-name="Path 108" d="M65.4,69.585,69.585,65.4l3.466,3.466-4.184,4.183Zm0,0" transform="translate(-40.948 -41.22)"></path>
+                           <path data-name="Path 109" d="M329.572,317.739a11.693,11.693,0,0,0-5.972,1.678l-12.643-12.644-4.183,4.183L319.418,323.6a11.692,11.692,0,0,0-1.678,5.972,11.832,11.832,0,1,0,11.832-11.832Zm0,17.748a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,329.572,335.488Zm0,0" transform="translate(-193.07 -193.342)"></path>
+                           <path data-name="Path 110" d="M427.654,415.822a11.693,11.693,0,0,0-5.972,1.678l-2.035-2.035-4.181,4.181,2.035,2.035a11.692,11.692,0,0,0-1.678,5.972,11.832,11.832,0,1,0,11.832-11.832Zm0,17.748a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,427.654,433.57Zm0,0" transform="translate(-261.572 -261.843)"></path>
+                           <path data-name="Path 111" d="M205.4,366.011a11.715,11.715,0,0,0-5.028,1.184l-5.656-6.8a11.727,11.727,0,0,0-7.064-17.624V336.43h-5.916v6.336a11.725,11.725,0,0,0-7.063,17.624l-5.656,6.8a11.721,11.721,0,0,0-5.029-1.184,11.913,11.913,0,1,0,9.588,4.953l5.4-6.488a11.4,11.4,0,0,0,11.429,0l5.4,6.488a11.8,11.8,0,1,0,9.586-4.953Zm-41.413,17.748a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,163.988,383.759Zm20.707-23.665a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,184.694,360.095ZM205.4,383.759a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,205.4,383.759Zm0,0" transform="translate(-95.522 -212.032)"></path>
+                           <path data-name="Path 112" d="M394.773,398.956l4.183-4.183,3.465,3.465-4.183,4.184Zm0,0" transform="translate(-248.531 -248.802)"></path>
+                           <path data-name="Path 113" d="M20.27,415.465,18.234,417.5a11.684,11.684,0,0,0-5.972-1.678,11.832,11.832,0,1,0,11.832,11.832,11.677,11.677,0,0,0-1.677-5.972l2.035-2.035ZM12.262,433.57a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,12.262,433.57Zm0,0" transform="translate(0 -261.843)"></path>
+                           <path data-name="Path 114" d="M115.06,310.956l-4.183-4.183L98.235,319.418a11.685,11.685,0,0,0-5.972-1.678,11.832,11.832,0,1,0,11.832,11.832,11.677,11.677,0,0,0-1.677-5.972Zm-22.8,24.531a5.916,5.916,0,1,1,5.916-5.916A5.916,5.916,0,0,1,92.262,335.488Zm0,0" transform="translate(-50.419 -193.341)"></path>
+                           <path data-name="Path 115" d="M65.4,398.239l3.465-3.465,4.184,4.183-3.466,3.466Zm0,0" transform="translate(-40.948 -248.803)"></path>
+                           <path data-name="Path 116" d="M336.43,232.43h5.916v5.916H336.43Zm0,0" transform="translate(-211.761 -146.487)"></path>
+                           <path data-name="Path 117" d="M368.43,232.43h5.916v5.916H368.43Zm0,0" transform="translate(-231.928 -146.487)"></path>
+                           <path data-name="Path 118" d="M12.268,232.164a11.832,11.832,0,0,0,11.413-8.874h6.335v-5.916H23.681a11.812,11.812,0,1,0-11.413,14.79Zm0-17.748a5.916,5.916,0,1,1-5.916,5.916A5.916,5.916,0,0,1,12.268,214.416Zm0,0" transform="translate(-0.006 -131.431)"></path>
+                           <path data-name="Path 119" d="M128.43,232.43h5.916v5.916H128.43Zm0,0" transform="translate(-80.671 -146.487)"></path>
+                           <path data-name="Path 120" d="M96.43,232.43h5.916v5.916H96.43Zm0,0" transform="translate(-60.503 -146.487)"></path>
+                           <path data-name="Path 121" d="M190.011,160.43a29.581,29.581,0,1,0,29.581,29.581A29.582,29.582,0,0,0,190.011,160.43Zm-14.79,48.026v-.205a36.893,36.893,0,0,1,8.707-13.888l.111-.113a11.468,11.468,0,0,0,11.945,0l.113.113A36.872,36.872,0,0,1,204.8,208.25v.205A23.563,23.563,0,0,1,175.22,208.456Zm14.79-18.445a5.916,5.916,0,1,1,5.916-5.916A5.915,5.915,0,0,1,190.011,190.011ZM209.3,203.669a42.674,42.674,0,0,0-9.024-13.489l-.113-.113a11.669,11.669,0,0,0,1.677-5.972,11.832,11.832,0,1,0-23.665,0,11.685,11.685,0,0,0,1.678,5.972l-.113.113a42.7,42.7,0,0,0-9.026,13.489,23.665,23.665,0,1,1,38.585,0Zm0,0" transform="translate(-100.839 -101.11)"></path>
+                        </g>
+                     </svg>
+                              <h4>Distributed Infrastructure</h4>
+                              <p>Our messaging platform is configured with reliable infrastructure that encrypts all the data transmitted between the apps and servers to protect from unwanted access.</p>
+                              </div>
+                        </div>
+                   </div>
+               </div>
+                <div class="features-img wow fadeInRight" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                  <img src="./h_m/security-healthcare.png" class="lazy-communication" alt="create voice chat app" style="">
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+<!-- Bottom CTA -->
+      <section class="bottom-cta clearfix">
+         <div class="container">
+         <div class="cta-bacgrount">
+            <h3>Let's Get Started!
+            <span>
+                  Banuba
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="718.058" height="718" viewBox="0 0 718.058 718">
+                     <defs>
+                        <lineargradient id="linear-gradient-sha1" x1="0.868" y1="1.25" x2="0.132" y2="-0.25" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#ffa700"></stop>
+                           <stop offset="0.023" stop-color="#ffa700"></stop>
+                           <stop offset="0.598" stop-color="#ffce00"></stop>
+                           <stop offset="1" stop-color="#ffce00"></stop>
+                        </lineargradient>
+                        <filter id="Path_1-sha1" x="0" y="0" width="718.058" height="718" filterUnits="userSpaceOnUse">
+                           <feoffset dx="5" dy="5"></feoffset>
+                           <fegaussianblur stdDeviation="30" result="blur"></fegaussianblur>
+                           <feflood flood-opacity="0.149"></feflood>
+                           <fecomposite operator="in" in2="blur"></fecomposite>
+                           <fecomposite in="SourceGraphic" in2="svg"></fecomposite>
+                        </filter>
+                     </defs>
+                     <g id="Group_2-sha1" data-name="Group 2" transform="translate(-104.338 -51.592)">
+                        <g transform="matrix(1, 0, 0, 1, 104.34, 51.59)" filter="url(#Path_1-sha1)">
+                           <path id="Path_1-2-sha1" data-name="Path 1" d="M628.752,823.516a23.656,23.656,0,0,1-11.523-3.035L503.347,757.868a28.789,28.789,0,0,0-27.53-.027L361.96,820.454a23.5,23.5,0,0,1-11.342,2.9,24.825,24.825,0,0,1-19.23-9.236,25.851,25.851,0,0,1-5.413-21.077l21.73-132.612a31.622,31.622,0,0,0-8.481-27.252L247.1,539.255a26.72,26.72,0,0,1-6.29-26.689,25.067,25.067,0,0,1,20.054-17.694l127.312-19.359a29.6,29.6,0,0,0,22.246-16.888l56.915-120.638a24.343,24.343,0,0,1,44.491-.027l56.916,120.665a29.7,29.7,0,0,0,22.245,16.888l75.825,11.514,51.488,7.818a25.041,25.041,0,0,1,20.029,17.694,26.724,26.724,0,0,1-6.29,26.716l-92.1,93.894a31.7,31.7,0,0,0-8.48,27.279l21.73,132.612a25.846,25.846,0,0,1-5.388,21.05A24.5,24.5,0,0,1,628.752,823.516Z" transform="translate(-135.55 -219.52)" stroke="#b1962b" stroke-width="38" fill="url(#linear-gradient-sha1)"></path>
+                        </g>
+                     </g>
+                  </svg>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="718.058" height="718" viewBox="0 0 718.058 718">
+                     <defs>
+                        <lineargradient id="linear-gradient-sha2" x1="0.868" y1="1.25" x2="0.132" y2="-0.25" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#ffa700"></stop>
+                           <stop offset="0.023" stop-color="#ffa700"></stop>
+                           <stop offset="0.598" stop-color="#ffce00"></stop>
+                           <stop offset="1" stop-color="#ffce00"></stop>
+                        </lineargradient>
+                        <filter id="Path_1-sha2" x="0" y="0" width="718.058" height="718" filterUnits="userSpaceOnUse">
+                           <feoffset dx="5" dy="5"></feoffset>
+                           <fegaussianblur stdDeviation="30" result="blur"></fegaussianblur>
+                           <feflood flood-opacity="0.149"></feflood>
+                           <fecomposite operator="in" in2="blur"></fecomposite>
+                           <fecomposite in="SourceGraphic" in2="svg"></fecomposite>
+                        </filter>
+                     </defs>
+                     <g id="Group_2-sha2" data-name="Group 2" transform="translate(-104.338 -51.592)">
+                        <g transform="matrix(1, 0, 0, 1, 104.34, 51.59)" filter="url(#Path_1-sha2)">
+                           <path id="Path_1-2-sha2" data-name="Path 1" d="M628.752,823.516a23.656,23.656,0,0,1-11.523-3.035L503.347,757.868a28.789,28.789,0,0,0-27.53-.027L361.96,820.454a23.5,23.5,0,0,1-11.342,2.9,24.825,24.825,0,0,1-19.23-9.236,25.851,25.851,0,0,1-5.413-21.077l21.73-132.612a31.622,31.622,0,0,0-8.481-27.252L247.1,539.255a26.72,26.72,0,0,1-6.29-26.689,25.067,25.067,0,0,1,20.054-17.694l127.312-19.359a29.6,29.6,0,0,0,22.246-16.888l56.915-120.638a24.343,24.343,0,0,1,44.491-.027l56.916,120.665a29.7,29.7,0,0,0,22.245,16.888l75.825,11.514,51.488,7.818a25.041,25.041,0,0,1,20.029,17.694,26.724,26.724,0,0,1-6.29,26.716l-92.1,93.894a31.7,31.7,0,0,0-8.48,27.279l21.73,132.612a25.846,25.846,0,0,1-5.388,21.05A24.5,24.5,0,0,1,628.752,823.516Z" transform="translate(-135.55 -219.52)" stroke="#b1962b" stroke-width="38" fill="url(#linear-gradient-sha2)"></path>
+                        </g>
+                     </g>
+                  </svg>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="718.058" height="718" viewBox="0 0 718.058 718">
+                     <defs>
+                        <lineargradient id="linear-gradient-sha3" x1="0.868" y1="1.25" x2="0.132" y2="-0.25" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#ffa700"></stop>
+                           <stop offset="0.023" stop-color="#ffa700"></stop>
+                           <stop offset="0.598" stop-color="#ffce00"></stop>
+                           <stop offset="1" stop-color="#ffce00"></stop>
+                        </lineargradient>
+                        <filter id="Path_1-sha3" x="0" y="0" width="718.058" height="718" filterUnits="userSpaceOnUse">
+                           <feoffset dx="5" dy="5"></feoffset>
+                           <fegaussianblur stdDeviation="30" result="blur"></fegaussianblur>
+                           <feflood flood-opacity="0.149"></feflood>
+                           <fecomposite operator="in" in2="blur"></fecomposite>
+                           <fecomposite in="SourceGraphic" in2="svg"></fecomposite>
+                        </filter>
+                     </defs>
+                     <g id="Group_2-sha3" data-name="Group 2" transform="translate(-104.338 -51.592)">
+                        <g transform="matrix(1, 0, 0, 1, 104.34, 51.59)" filter="url(#Path_1-sha3)">
+                           <path id="Path_1-2-sha3" data-name="Path 1" d="M628.752,823.516a23.656,23.656,0,0,1-11.523-3.035L503.347,757.868a28.789,28.789,0,0,0-27.53-.027L361.96,820.454a23.5,23.5,0,0,1-11.342,2.9,24.825,24.825,0,0,1-19.23-9.236,25.851,25.851,0,0,1-5.413-21.077l21.73-132.612a31.622,31.622,0,0,0-8.481-27.252L247.1,539.255a26.72,26.72,0,0,1-6.29-26.689,25.067,25.067,0,0,1,20.054-17.694l127.312-19.359a29.6,29.6,0,0,0,22.246-16.888l56.915-120.638a24.343,24.343,0,0,1,44.491-.027l56.916,120.665a29.7,29.7,0,0,0,22.245,16.888l75.825,11.514,51.488,7.818a25.041,25.041,0,0,1,20.029,17.694,26.724,26.724,0,0,1-6.29,26.716l-92.1,93.894a31.7,31.7,0,0,0-8.48,27.279l21.73,132.612a25.846,25.846,0,0,1-5.388,21.05A24.5,24.5,0,0,1,628.752,823.516Z" transform="translate(-135.55 -219.52)" stroke="#b1962b" stroke-width="38" fill="url(#linear-gradient-sha3)"></path>
+                        </g>
+                     </g>
+                  </svg>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="718.058" height="718" viewBox="0 0 718.058 718">
+                     <defs>
+                        <lineargradient id="linear-gradient-sha4" x1="0.868" y1="1.25" x2="0.132" y2="-0.25" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#ffa700"></stop>
+                           <stop offset="0.023" stop-color="#ffa700"></stop>
+                           <stop offset="0.598" stop-color="#ffce00"></stop>
+                           <stop offset="1" stop-color="#ffce00"></stop>
+                        </lineargradient>
+                        <filter id="Path_1-sha4" x="0" y="0" width="718.058" height="718" filterUnits="userSpaceOnUse">
+                           <feoffset dx="5" dy="5"></feoffset>
+                           <fegaussianblur stdDeviation="30" result="blur"></fegaussianblur>
+                           <feflood flood-opacity="0.149"></feflood>
+                           <fecomposite operator="in" in2="blur"></fecomposite>
+                           <fecomposite in="SourceGraphic" in2="svg"></fecomposite>
+                        </filter>
+                     </defs>
+                     <g id="Group_2-sha4" data-name="Group 2" transform="translate(-104.338 -51.592)">
+                        <g transform="matrix(1, 0, 0, 1, 104.34, 51.59)" filter="url(#Path_1-sha4)">
+                           <path id="Path_1-2-sha4" data-name="Path 1" d="M628.752,823.516a23.656,23.656,0,0,1-11.523-3.035L503.347,757.868a28.789,28.789,0,0,0-27.53-.027L361.96,820.454a23.5,23.5,0,0,1-11.342,2.9,24.825,24.825,0,0,1-19.23-9.236,25.851,25.851,0,0,1-5.413-21.077l21.73-132.612a31.622,31.622,0,0,0-8.481-27.252L247.1,539.255a26.72,26.72,0,0,1-6.29-26.689,25.067,25.067,0,0,1,20.054-17.694l127.312-19.359a29.6,29.6,0,0,0,22.246-16.888l56.915-120.638a24.343,24.343,0,0,1,44.491-.027l56.916,120.665a29.7,29.7,0,0,0,22.245,16.888l75.825,11.514,51.488,7.818a25.041,25.041,0,0,1,20.029,17.694,26.724,26.724,0,0,1-6.29,26.716l-92.1,93.894a31.7,31.7,0,0,0-8.48,27.279l21.73,132.612a25.846,25.846,0,0,1-5.388,21.05A24.5,24.5,0,0,1,628.752,823.516Z" transform="translate(-135.55 -219.52)" stroke="#b1962b" stroke-width="38" fill="url(#linear-gradient-sha4)"></path>
+                        </g>
+                     </g>
+                  </svg>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="718.058" height="718" viewBox="0 0 718.058 718">
+                     <defs>
+                        <lineargradient id="linear-gradient-sha5" x1="0.868" y1="1.25" x2="0.132" y2="-0.25" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#ffa700"></stop>
+                           <stop offset="0.023" stop-color="#ffa700"></stop>
+                           <stop offset="0.598" stop-color="#ffce00"></stop>
+                           <stop offset="1" stop-color="#ffce00"></stop>
+                        </lineargradient>
+                        <filter id="Path_1-sha5" x="0" y="0" width="718.058" height="718" filterUnits="userSpaceOnUse">
+                           <feoffset dx="5" dy="5"></feoffset>
+                           <fegaussianblur stdDeviation="30" result="blur"></fegaussianblur>
+                           <feflood flood-opacity="0.149"></feflood>
+                           <fecomposite operator="in" in2="blur"></fecomposite>
+                           <fecomposite in="SourceGraphic" in2="svg"></fecomposite>
+                        </filter>
+                     </defs>
+                     <g id="Group_2-sha5" data-name="Group 2" transform="translate(-104.338 -51.592)">
+                        <g transform="matrix(1, 0, 0, 1, 104.34, 51.59)" filter="url(#Path_1-sha5)">
+                           <path id="Path_1-2-sha5" data-name="Path 1" d="M628.752,823.516a23.656,23.656,0,0,1-11.523-3.035L503.347,757.868a28.789,28.789,0,0,0-27.53-.027L361.96,820.454a23.5,23.5,0,0,1-11.342,2.9,24.825,24.825,0,0,1-19.23-9.236,25.851,25.851,0,0,1-5.413-21.077l21.73-132.612a31.622,31.622,0,0,0-8.481-27.252L247.1,539.255a26.72,26.72,0,0,1-6.29-26.689,25.067,25.067,0,0,1,20.054-17.694l127.312-19.359a29.6,29.6,0,0,0,22.246-16.888l56.915-120.638a24.343,24.343,0,0,1,44.491-.027l56.916,120.665a29.7,29.7,0,0,0,22.245,16.888l75.825,11.514,51.488,7.818a25.041,25.041,0,0,1,20.029,17.694,26.724,26.724,0,0,1-6.29,26.716l-92.1,93.894a31.7,31.7,0,0,0-8.48,27.279l21.73,132.612a25.846,25.846,0,0,1-5.388,21.05A24.5,24.5,0,0,1,628.752,823.516Z" transform="translate(-135.55 -219.52)" stroke="#b1962b" stroke-width="38" fill="url(#linear-gradient-sha5)"></path>
+                        </g>
+                     </g>
+                  </svg>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="718.058" height="718" viewBox="0 0 718.058 718">
+                     <defs>
+                        <lineargradient id="linear-gradient-sha" x1="0.868" y1="1.25" x2="0.132" y2="-0.25" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#ffa700"></stop>
+                           <stop offset="0.023" stop-color="#ffa700"></stop>
+                           <stop offset="0.598" stop-color="#ffce00"></stop>
+                           <stop offset="1" stop-color="#ffce00"></stop>
+                        </lineargradient>
+                        <filter id="Path_1-sha" x="0" y="0" width="718.058" height="718" filterUnits="userSpaceOnUse">
+                           <feoffset dx="5" dy="5"></feoffset>
+                           <fegaussianblur stdDeviation="30" result="blur"></fegaussianblur>
+                           <feflood flood-opacity="0.149"></feflood>
+                           <fecomposite operator="in" in2="blur"></fecomposite>
+                           <fecomposite in="SourceGraphic" in2="svg"></fecomposite>
+                        </filter>
+                     </defs>
+                     <g id="Group_2-sha" data-name="Group 2" transform="translate(-104.338 -51.592)">
+                        <g transform="matrix(1, 0, 0, 1, 104.34, 51.59)" filter="url(#Path_1-sha)">
+                           <path id="Path_1-2-sha" data-name="Path 1" d="M628.752,823.516a23.656,23.656,0,0,1-11.523-3.035L503.347,757.868a28.789,28.789,0,0,0-27.53-.027L361.96,820.454a23.5,23.5,0,0,1-11.342,2.9,24.825,24.825,0,0,1-19.23-9.236,25.851,25.851,0,0,1-5.413-21.077l21.73-132.612a31.622,31.622,0,0,0-8.481-27.252L247.1,539.255a26.72,26.72,0,0,1-6.29-26.689,25.067,25.067,0,0,1,20.054-17.694l127.312-19.359a29.6,29.6,0,0,0,22.246-16.888l56.915-120.638a24.343,24.343,0,0,1,44.491-.027l56.916,120.665a29.7,29.7,0,0,0,22.245,16.888l75.825,11.514,51.488,7.818a25.041,25.041,0,0,1,20.029,17.694,26.724,26.724,0,0,1-6.29,26.716l-92.1,93.894a31.7,31.7,0,0,0-8.48,27.279l21.73,132.612a25.846,25.846,0,0,1-5.388,21.05A24.5,24.5,0,0,1,628.752,823.516Z" transform="translate(-135.55 -219.52)" stroke="#b1962b" stroke-width="38" fill="url(#linear-gradient-sha)"></path>
+                        </g>
+                     </g>
+                  </svg>
+               </span>
+            </h3>
+            <p>Build Your Own Secure Healthcare Platform To Connect Medical Professionals &amp; Patients in Real-time</p>
+            <a href="form.html">Contact Sales</a>
+         </div>
+      </div>
+      </section>
+      
+      <!-- End Bottom CTA -->
+
+<div class="popup-overlay"></div>
+<script src="./h_m/custom.js"></script>
+<!-- <script async="" src="./h_m/contact-form.js.Без названия"></script>   -->
+<script>
+   // Menu in Responsive
+   $(document).ready(function(){         
+    $(".hamburger").click(function(){
+    $(".menu").slideToggle();
+    $(".hamburger").toggleClass("ham-toggle");
+    $(".dropdown").removeClass("active");
+     $(".dropdown-menu").css("display", "none");
+    });
+    });
+
+   // Dropdown in Responsive
+   if($(window).width()<769){
+   $(".dropdown").click(function(){
+      if ($(this).hasClass('active')){
+         $(this).removeClass("active");
+         $(this).find(".dropdown-menu").slideToggle();
+      }
+      else{
+         $(".dropdown").find(".dropdown-menu").slideUp();
+         $(".dropdown").removeClass("active");
+         $(this).addClass("active");
+       $(this).find(".dropdown-menu").slideToggle();
+      }       
+    }); 
+}
+ // Fixed Header
+   if($(window).width()<1200){
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();         
+    if (scroll >= 60) {
+    $("header").addClass("fixed-header");
+    } else {
+    $("header").removeClass("fixed-header");
+    }
+    });
+    }
+   // Fixed Header
+   if($(window).width()>768){
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();         
+    if (scroll >= 113) {
+    $("header").addClass("fixed-header");
+    } else {
+    $("header").removeClass("fixed-header");
+    }
+    });
+    }
+       // Fixed submenu
+   if($(window).width()>768){
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();         
+    if (scroll >=150) { //60
+    $(".innerpagesmenu").addClass("sticky-fixed");
+    } else {
+    $(".innerpagesmenu").removeClass("sticky-fixed");
+    }
+    });
+    }
+
+   // Wow Effects
+   wow = new WOW({
+       boxClass: 'wow', // default
+       animateClass: 'animated', // default
+       offset: 100, // default
+       mobile: false, // default
+       live: true // default
+   })
+   wow.init();
+        
+   if ($(window).width() <= 768) {
+   $('.wow').removeClass('wow');
+   }
+
+   // Form Number Validation
+          $(document).ready(function () {
+   //called when key is pressed in textbox
+   $(".no-validation").keypress(function (e) {
+      //if the letter is not digit then display error and don't type anything
+      if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+         //display error message
+                return false;
+     }
+    });
+   }); 
+   // Right Click Disable Images & Video
+   $('img, video').bind('contextmenu', function(e){
+   return false;
+   });  
+
+   if ($(window).width() <= 1200) {
+   //alert('Less than 960');
+   $( ".dropmenu-new" ).click(function() {
+      var child = $(this).children('.submenu') ,
+           rest = $('.submenu:visible').not(child);       
+       child.slideToggle();
+       rest.slideUp();
+
+});
+}
+  
+</script>      <!-- Tab -->
+      <script>
+         $(".tab_content").hide();
+         $(".tab_content:first").show();       
+         /* if in tab mode */
+         $("ul.tabs li").click(function() {    
+         $(".tab_content").hide();
+         var activeTab = $(this).attr("rel"); 
+         $("#"+activeTab).fadeIn();           
+         $("ul.tabs li").removeClass("active");
+         $(this).addClass("active");         
+         $(".tab_drawer_heading").removeClass("d_active");
+         $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");         
+         });
+         /* if in drawer mode */
+         $(".tab_drawer_heading").click(function() {         
+         $(".tab_content").hide();
+         var d_activeTab = $(this).attr("rel"); 
+         $("#"+d_activeTab).fadeIn();         
+         $(".tab_drawer_heading").removeClass("d_active");
+         $(this).addClass("d_active");         
+         $("ul.tabs li").removeClass("active");
+         $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+         });
+         /* Extra class "tab_last" 
+         to add border to right side
+         of last tab */
+         $('ul.tabs li').last().addClass("tab_last");         
+      </script>
+      <!-- Lazy Loader -->
+      <script>
+         $(document).ready(function() {
+         $('.lazy').lazy({ 
+            effect: "fadeIn",
+           effectTime: 1000,
+           threshold: 0
+         });
+         $('.tabs li').click(function() {
+            $('img.lazy').lazy({
+                bind: "event"
+            });
+         });
+         });
+      </script>
+      <script>
+         // Accordion 1
+         $(document).ready(function(){
+            $('.accordion-comm').off().on('click', function() {
+               $('.accordion-comm').removeClass("active-acc");
+            var elem = $(this);
+            var curUl = elem.find('.comm-desc');
+            $(this).addClass("active-acc");
+            $('.comm-desc').not(curUl).slideUp();
+            elem.find('.comm-desc').slideToggle();
+            });
+         });
+         // Accordion 2
+         $(document).ready(function(){
+            $('.accordion-data').off().on('click', function() {
+               $('.accordion-data').removeClass("active-acc");
+            var elem = $(this);
+            var curUl = elem.find('.data-desc');
+            $(this).addClass("active-acc");
+            $('.data-desc').not(curUl).slideUp();
+            elem.find('.data-desc').slideToggle();
+            });
+         });
+           // Accordion 3
+                  $(document).ready(function(){
+            $('.accordion-media-handling').off().on('click', function() {
+               $('.accordion-media-handling').removeClass("active-acc");
+            var elem = $(this);
+            var curUl = elem.find('.media-handling-desc');
+            $(this).addClass("active-acc");
+            $('.media-handling-desc').not(curUl).slideUp();
+            elem.find('.media-handling-desc').slideToggle();
+            });
+         });
+          // Accordion 4
+          $(document).ready(function(){
+            $('.push-to-talk-accordion').off().on('click', function() {
+               $('.push-to-talk-accordion').removeClass("active-acc");
+            var elem = $(this);
+            var curUl = elem.find('.push-to-talk-desc');
+            $(this).addClass("active-acc");
+            $('.push-to-talk-desc').not(curUl).slideUp();
+            elem.find('.push-to-talk-desc').slideToggle();
+            });
+         });
+          // Accordion 5
+          $(document).ready(function(){
+            $('.data-moderation-accordion').off().on('click', function() {
+               $('.data-moderation-accordion').removeClass("active-acc");
+            var elem = $(this);
+            var curUl = elem.find('.data-moderation-desc');
+            $(this).addClass("active-acc");
+            $('.data-moderation-desc').not(curUl).slideUp();
+            elem.find('.data-moderation-desc').slideToggle();
+            });
+         });
+      </script>
+ 
+            <script>
+         jQuery(function(){        
+         jQuery('.showSingle').click(function(event){
+         event.preventDefault();
+          jQuery('.showSingle').removeClass("active");
+          jQuery(this).addClass("active");
+          jQuery('.targetDiv').hide();
+          jQuery('#div'+$(this).attr('target')).show();                  
+          if(jQuery('#div'+$(this).attr('target')).hasClass("active")){
+             jQuery(".security-content").removeClass("active");
+             jQuery('#div'+$(this).attr('target')).addClass("active");
+          }
+          else {
+             jQuery(".security-content").removeClass("active");
+             jQuery('#div'+$(this).attr('target')).addClass("active");         
+          }         
+         });
+         });          
+      </script>
+      <script>
+         jQuery(function(){        
+         jQuery('.showSingle-screen-sharing').click(function(event){
+         event.preventDefault();
+          jQuery('.showSingle-screen-sharing').removeClass("active");
+          jQuery(this).addClass("active");
+          jQuery('.targetDiv-screensharing').hide();
+          jQuery('#div'+$(this).attr('target')).show();                  
+          if(jQuery('#div'+$(this).attr('target')).hasClass("active")){
+             jQuery(".screen-sharing-content").removeClass("active");
+             jQuery('#div'+$(this).attr('target')).addClass("active");
+          }
+          else {
+             jQuery(".screen-sharing-content").removeClass("active");
+             jQuery('#div'+$(this).attr('target')).addClass("active");         
+          }         
+         });
+         });           
+      </script>
+        <script>
+         $(window).scroll(function () {
+            $('.innerpagesmenu ul li a').removeClass('active');
+            if ($(document).scrollTop() >= $('#rest-orchestration').offset().top - 70) {               
+               $('.innerpagesmenu ul li a').removeClass('active');
+               $('.sticky-tab-1').addClass('active');
+            }
+            if ($(document).scrollTop() >= $('#feature-enriched').offset().top - 120) {
+               $('.innerpagesmenu ul li a').removeClass('active');
+               $('.sticky-tab-2').addClass('active');
+            }
+            if ($(document).scrollTop() >= $('#video-conferencing').offset().top - 100) {
+               $('.innerpagesmenu ul li a').removeClass('active');
+               $('.sticky-tab-3').addClass('active');
+            }
+            if ($(document).scrollTop() >= $('#broadcasting-sdk').offset().top - 100) {
+               $('.innerpagesmenu ul li a').removeClass('active');
+               $('.sticky-tab-4').addClass('active');
+            }
+            if ($(document).scrollTop() >= $('#hipaa-Compliance').offset().top - 140) {
+               $('.innerpagesmenu ul li a').removeClass('active');
+               $('.sticky-tab-5').addClass('active');
+            }
+         });
+         $('.sticky-tab-1').click(function(e){
+            e.stopPropagation();        
+            $(this).addClass('active');  
+             $('.innerpagesmenu ul li a').removeClass('active');
+             setTimeout(function(){
+               $('.innerpagesmenu ul li a').removeClass('active');
+            $('.sticky-tab-1').addClass('active');
+            }, 1000);     
+            });
+            $('.sticky-tab-2').click(function(e){
+            e.stopPropagation();        
+            $(this).addClass('active');  
+             $('.innerpagesmenu ul li a').removeClass('active');
+             setTimeout(function(){
+               $('.innerpagesmenu ul li a').removeClass('active');
+            $('.sticky-tab-2').addClass('active');
+            }, 1000);     
+            });
+      </script>
+</body></html>
